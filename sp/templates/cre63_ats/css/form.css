@@ -1,0 +1,285 @@
+.FORM {
+  display: inline;
+}
+
+.CHECKBOX, RADIO {
+}
+
+select {
+height: 25px;  				/* dropdown select menu and field */
+}
+
+input{
+	height: 20px;
+	padding-left: 5px;      /*Khoang cah tu text den boder left*/
+}
+
+input[type="checkbox"]{
+	height: initial;			/* height of checkbox*/
+}
+
+input[type="radio"]{
+	height: 12px;			/* height of radio button */
+}
+
+
+input[type="number"]{
+	height: 20px;			
+	width: 50px;
+}
+
+TEXTAREA {
+  width: 100%;
+  border: 1px solid #c3c2c2;
+  border-radius: 5px;
+}
+
+/* below are used in PWA form*/
+td.formAreaTitle {
+  font-weight: bold;
+}
+td.fieldKey {
+  font-weight: bold;
+}
+td.fieldValue {
+}
+.inputRequirement{
+  color: #005EA7;
+}
+
+
+label.main{width:170px;float:left}
+
+
+
+/********** SIGN UP PAGE control size and font-size of input in  ***********/
+
+.input_signup{
+	width: 250px;
+}
+.select_signup{
+ width:250px;
+   height: 20px;
+}
+
+/********** SIGN UP PAGE EOF  ***********/
+
+
+
+/*************** Order checkout page **************/
+/*IT Service Zone: START**/
+
+.order_checkout .column1, .order_checkout .column2{
+width: 45%;
+float: left;
+box-sizing: border-box;
+margin-top: 20px;
+}
+
+.order_checkout .column1 {
+border-right: 50px solid transparent;
+width: 55%;
+
+}
+
+
+.order_checkout .row{
+margin-bottom: 20px;
+}
+
+
+div.creditcard {float:left;}
+div.creditcard {min-width: 180px; margin-top:2%} /* set min width for creditcard to make sure it aligned*/
+
+.credits_available .one{}
+.credits_available .two{width:auto; display:inline-block;}
+/*
+.credits_available .one .click{display:inline-block;padding-left: 15px;}
+.credits_available .two .click{display:none}
+*/
+.products_list tr.moduleRowSelected{
+  /*display: grid;*/      /*ITSZ: checkout page product list*/
+}
+
+
+/* total of percentages belowmust equal o 100%  to ensure correct listing */
+.products_list .qty{width:10%;			display: table-cell; border:0px solid red}
+.products_list .item{width:55%;			display: table-cell;border:0px solid red}
+.products_list .final_price{width:15%;	display: table-cell;border:0px solid red}
+.products_list .total{width:20%;		display: table-cell; border:0px solid red}
+
+
+.products_list .sale_price{display: none}		/*no use in desktop*/
+.products_list .unit_price{display: none;} /* no use in desktop */
+.products_list .qty_m{display: none;}
+.products_list .bar_m{display: none;}
+
+.products_list .qty_d{display: table-cell;}
+
+.products_list .responsive{display:none;}
+
+
+fieldset { 
+	border:1px solid #ccc;
+ 	-moz-border-radius: 10px; 			/* round corner: work for FF but not work on IE */
+    -webkit-border-radius: 10px; 		/* round corner: work on FF, but not work on IE */
+	border-radius: 10px; 				/* round corner: for IE only but does not work */
+	background: white;
+	padding: 20px;
+ }
+
+
+legend {
+  margin-left: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  color: #3F3F3F;
+  text-transform: uppercase;    
+  font-weight: bold;
+  text-align:left;
+  padding: 0 5px;
+  font-size:20px;
+  }
+
+.parent_prod{
+	color: #5e605c;
+	margin-top: 10px;
+}
+.moduleRow { }
+.moduleRowOver { background-color: #D3D3D3; cursor: pointer; }
+.moduleRowSelected { background-color: #D3D3D3; }
+.checkoutBarFrom, .checkoutBarTo {  color: #8c8c8c; }
+.checkoutBarCurrent {  color: #000000; }
+tr.subBar {
+  background: #f4f7fd;
+}
+
+td.tableHeading {
+  font-size: 12px;
+  font-weight: bold;
+}
+SPAN.newItemInCart {
+  color: #005EA7;
+}
+SPAN.markProductOutOfStock {
+  color: #c76170;
+  font-weight: bold;
+}
+SPAN.productSpecialPrice {
+  color: #fc1d0c;
+  
+
+}
+
+td.main_total{
+  line-height: 1.2;
+  color: #5E5E5E;
+}
+
+.nowrap {white-space:nowrap;
+}
+
+
+/********************** Contact form **********************/
+
+
+/*****  QUICK SEARCH BOX  ON TOP    *******/
+/*
+   .search_box_setup{
+    	background-image:url('../../../../images/blank_image.gif'); 
+    	border: 0px; 
+		background-color:transparent;
+    }
+*/
+	.advanced_search{
+	color:#848383; 
+	text-decoration: underline;		
+	}
+
+    input.search_box_input{
+    	border: none; 
+   		font-size:12px;
+		color:#d5d3d3;; 
+		font-weight:normal;
+    	width: 250px;
+    	height: 25px;
+    	margin-top: -0px;
+    	background: #353a38;
+	    outline: 0px solid #767070;
+	    border-radius: 4px;
+
+	}
+
+    input.search_box_submit[type="image"]{
+        padding-left: 0px;
+        height: auto;
+        border:0px solid red;
+    }
+
+/*****  QUICK SEARCH BOX   EOF   *******/
+
+
+
+/********************** Contact form End **********************/
+
+
+/************************ Responsive Structure ****************/
+
+/* for new/big desktop from 1200 px and bigger ....*/
+@media (min-width: 0px) and (max-width: 3000px) {
+}
+/* for medium/old desktop screen from 1024 to 1200px */
+@media (min-width: 0px) and (max-width: 1200px) {
+    input.search_box_input{width:100%}
+
+}
+
+
+/* for medium view such as ipad  from 768 to 1024 */
+@media (min-width: 0px) and (max-width: 1024px) {
+}
+
+
+/* for small view such as iphone, samsung : less than 768 */
+@media (min-width: 0px) and (max-width: 767px) {
+    label.main{width:100%;float:left}
+
+    input[name="name"],input[name="email"],input[name="telephone"],input[name="subject"],textarea[name="enquiry"]{width:100%}
+    /*IT Service Zone: START**/
+    div.creditcard{float:left;width:100%; text-align:left;}
+    .credits_available .one{width:100%; float:left}
+    .credits_available .two{width:auto;float:left}
+    .products_list tr.moduleRowSelected{display: none;}
+    .products_list .qty{width:100%;display: table-cell}
+    .products_list .item{width:100%;display: table-cell}
+    .products_list .unit_price{width:auto;display: none;padding-right: 0px; }
+    .products_list .final_price{width:auto;display: table-cell; text-align: right;padding-right: 5px}
+    .products_list .sale_price{width:auto;display: none; text-align: right;padding-right: 5px}
+    .products_list .total{width:auto;display: table-cell; text-align: right}
+    .products_list .qty_m{display: table-cell; margin-top: 10px;  }
+    .products_list .bar_m{display: inline; margin:0px 10px}
+    .products_list .qty_d{display: none;}
+    .products_list .responsive{display:inline-block;}
+    .product_row{border-bottom: 1px solid #565353; padding: 10px 0px}
+
+    input[name="gv_redeem_code"],input[name="cc_owner"],input[name="cc_number"],input[name="cc_ccv"],select[name="credit_card_type"], textarea[name="comments"]{width:100%}
+    select[name="cc_expires_month"],select[name="cc_expires_year"]{width:45%; float:left; margin-right: 5px}
+
+	input[name="cc_ccv"]{width: 60px;}
+
+	.order_checkout .column1, .order_checkout .column2{ width: 100%}
+	.order_checkout .column1 {	border-right: 0px solid white;	}
+
+    /*IT Service Zone: EOF**/
+
+    /*IT Service Zone: checkboxes in the same line with their caption text START*/
+    label.urgent, label.myself_copy, div.urgent, div.myself_copy{width:auto !important;}
+    /*IT Service Zone: checkboxes in the same line with their caption text EOF*/
+
+	INPUT.login_email, INPUT.login_password{ width:100%}
+	input.search_box_submit[type="image"] {height: 25px}
+	legend {font-size:initial; }    
+
+}
+
+/************************ Responsive Structure EOF ****************/

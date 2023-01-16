@@ -1,0 +1,419 @@
+.minimal-menu, .clr-blue{ display: none;}	
+	
+	.minimal-menu-button {
+		display: none;
+	}	
+        /*IT Service Zone: responsive menu START*/
+        .cart-mobile{display: none;}
+        .flex-item.top-nav{display: block;}
+        .mobile-login{display: none}
+        /*IT Service Zone: EOF*/		
+        
+/* RESPONSIVE
+================================================== */
+
+@media only screen and (max-width: 767px) {
+	/* Blue
+	----------------*/
+	.minimal-menu.clr-blue {
+				display: block;
+	}
+	
+
+		
+	/* Green
+	----------------*/
+	.minimal-menu.clr-green {
+		background: #65e7a2;
+	}
+
+
+	
+	.minimal-menu-button {
+		display: none;
+	}
+	
+	.minimal-menu.pos-fixed {
+		position: fixed;
+		top: -2px;
+		left: -2px;
+		right: -2px;
+		-webkit-border-radius:	0;
+		-moz-border-radius:		0;
+		border-radius:			0;
+	}
+	
+	.minimal-menu a {
+		/*white-space: nowrap;*/
+	}
+
+	.minimal-menu > ul {
+		padding: 5px;
+	}
+		
+		.minimal-menu ul li {
+			display: block;
+		}
+
+
+	/*** Submenu ***/
+	.minimal-menu ul ul, .minimal-menu ul .menu-wrapper {
+	}
+
+
+
+		.minimal-menu ul ul li {
+			display: block;
+			overflow: hidden;
+			height: auto;
+			padding: 2px 10px;
+
+		}
+		
+			.minimal-menu ul ul li a {
+				font-size: 14px;
+
+			}
+
+
+
+			.minimal-menu ul ul li.submenu > a:before,
+			.minimal-menu ul ul li.submenu > a:after {
+				left: auto;
+				top: 50%;
+				right: 0;
+				background: #ccc;
+			}
+			
+			.minimal-menu ul ul li.submenu > a:before {
+				margin-top: -1px;
+			}
+			
+			.minimal-menu ul ul li.submenu > a:after {
+				margin-top: 2px;
+			}
+			
+
+			
+		.minimal-menu ul ul ul {
+			left: 100%;
+			top: -11px;
+		}
+
+		
+		/* Megamenu */
+		.minimal-menu ul li.megamenu {
+			position: static;
+		}
+
+			.minimal-menu ul .menu-wrapper {
+				position: absolute;
+				left: -1px;
+				top: 100%;
+				margin-top: -5px;
+				width: 100%;
+				-webkit-border-radius:	10px;
+				-moz-border-radius:		10px;
+				border-radius:			10px;
+			}
+
+			.minimal-menu ul .menu-wrapper a {
+				/*white-space: inherit;*/
+			}
+
+				.minimal-menu ul .menu-wrapper .menu-col {
+					position: relative;
+					float: left;
+					width: 23%;
+					margin: 0 1%;
+				}
+				
+					.minimal-menu ul .menu-wrapper h3 {
+						margin: 20px 15px;
+						font-size: 18px;
+						line-height: 22px;
+						color: #000;
+					}
+
+					.minimal-menu ul .menu-wrapper ul {
+						position: relative;
+						visibility: hidden;
+						height: 100%;
+						border: 0;
+						opacity: 1;
+						background: transparent;
+					}
+					
+
+						
+						.minimal-menu ul .menu-wrapper ul li {
+							padding: 0 10px;
+						}
+						
+	.minimal-menu .show-submenu {
+		display: none;
+	}
+
+	/* Blue
+	----------------*/
+	.minimal-menu.clr-blue {
+		background: white;
+	}
+
+	/* Green
+	----------------*/
+	.minimal-menu.clr-green {
+		background: #65e7a2;
+	}
+
+	.minimal-menu.clr-white h3,
+	.minimal-menu.clr-white ul li a {
+		color: #000;
+		border-bottom-color: rgba(0, 0, 0, 0.08);
+	}
+	
+	.minimal-menu.clr-white h3 {
+		background: rgba(0, 0, 0, 0.05);
+	}
+	
+
+	
+	
+	
+	.minimal-menu {
+		border-color: rgba(100%, 100%, 100%, 0.3);
+				display: block;
+	}
+	
+	.minimal-menu-button, .minimal-menu {
+		position: fixed;						 /* henry: need to fix this menu all the time at the top corner */
+		left: 12px;
+		top: 0;
+		z-index: 99 						/* henry must be on top of every item such as search box,... so that visitor can click this menu */
+	}
+	
+	input.minimal-menu-button {
+		display: none;
+	}
+	
+	label.minimal-menu-button {
+		display: inline-block;
+		width: 30px;
+		height: 37px;
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+		padding-top: 8px;
+	}
+	
+
+  label.minimal-menu-button:before {
+      border-bottom: 4px solid #fff;
+      border-top: 13px double #fff;
+      content: "";
+      height: 5px;
+        /*left: 18px;*/
+      position: absolute;
+        top: 10px;
+      width: 30px;
+      z-index: 1;
+  }  
+
+/* henry if no click button, then menu show but with 0 opacity and visibity = hidden*/	
+	.minimal-menu {
+		overflow: auto;
+		left: -100%;
+		bottom: 0;
+		opacity: 0;
+/* ITS change transition effect from slide in to fade in - start */
+		/* slide in
+		-webkit-transition:	left 0.8s, opacity 0.5s;
+		-moz-transition:	left 0.8s, opacity 0.5s;
+		transition:			left 0.8s, opacity 0.5s;
+		*/
+
+		/* fade in */
+		-webkit-transition: opacity .8s ease-in;
+	    -moz-transition: opacity .8s ease-in;
+	    -o-transition: opacity .8s ease-in;
+	    -ms-transition: opacity .8s ease-in;
+	    transition: opacity .8s ease-in;
+	    
+/* ITS change transition effect from slide in to fade in - EOF */
+
+
+		color: #fff;
+		/* padding: 0 15px 15px; */	/*ITSZ: adjust statice filte/sort by*/
+    	visibility: hidden;  	/* henry add on */
+		width: 280px;
+		height: 0px;  			/* henry sua lai thanh zero de bien block thu lai sieu nho */
+
+		}
+	.minimal-menu > ul{
+		padding: 10px 0 !important; /*ITSZ: adjust statice filte/sort by*/
+	}
+
+	.minimal-menu ul li ul li a:before{
+		content : "";
+		}
+
+	#close_menu .fa {color: #5f5959; }			 /* close button */
+
+/* henry if button is clicked ==>show menu */
+	#mobile-nav:checked + .minimal-menu {
+	min-height: 100%;		/*henry bo sung to cover 100%*/
+	height: fit-content; 	/*henry bo sung to cover 100% when scroll down- need for top_menu_style3 */
+
+    left: 0;
+    opacity: 1;
+    position: fixed;	/* henry fix this menu to top */
+    top: 0px;
+    visibility: visible;
+    z-index: 900;
+	}
+	
+	
+	.minimal-menu h3, .minimal-menu ul li a {
+		border-bottom: 1px solid #d8d4d4;
+		color: #5e605c;
+		text-decoration:none;
+		padding: 10px;
+
+	}
+	
+	.minimal-menu h3 {
+		font-size: 18px;
+		line-height: 1em;
+		margin: 0;
+		padding: 20px 0 20px 40px;
+		color: #fff;
+		background: rgba(100%, 100%, 100%, 0.10);
+	}
+	
+	.minimal-menu ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.minimal-menu li, .minimal-menu a {
+		display: block;
+	}
+	
+	.minimal-menu li {
+		position: relative;
+	}
+	
+/*	.minimal-menu a:hover {
+		background: rgba(100%, 100%, 100%, 0.2);
+	}
+	*/
+	.minimal-menu ul > li {
+		padding-bottom: 0;
+	}
+
+/*	.minimal-menu > ul > li:hover > a {
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+	}
+		*/
+	.minimal-menu ul ul ul a {
+		padding-left: 15px;
+	}
+
+	.minimal-menu ul ul ul ul a {
+		padding-left: 30px;
+	}
+
+	.minimal-menu ul ul li a {
+		font-size: 14px;
+	}
+
+	.minimal-menu ul li.submenu > a:before,
+	.minimal-menu ul li.submenu > a:after {
+		top: 50%;
+		left: auto;
+		right: 12px;
+	}
+	
+	.minimal-menu.clr-white ul li.submenu a:before,
+	.minimal-menu.clr-white ul li.submenu a:after {
+		background: #999;
+	}
+	
+	.minimal-menu ul li.submenu > a:before {
+		margin-top: -2px;
+	}
+	
+	.minimal-menu ul li.submenu > a:after {
+		margin-top: 1px;
+	}
+
+	
+	.minimal-menu .show-submenu {
+		position: absolute;
+		display: block;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 40px;
+		margin: 0;
+		opacity: 0;
+		-webkit-appearance: none;
+	}
+	
+	.minimal-menu .show-submenu + ul,
+	.minimal-menu .show-submenu + .menu-wrapper {
+		display: none;
+		visibility: hidden;
+	}
+	
+	.minimal-menu .show-submenu:checked + ul,
+	.minimal-menu .show-submenu:checked + .menu-wrapper {
+		display: block;
+		visibility: visible;
+	}
+        
+
+		.minimal-menu > ul > li > div{
+			width: auto !important;
+		}
+
+		.minimal-menu > ul > li > a > span{
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	.minimal-menu.clr-blue {
+
+	}
+
+/*ITSZ: main menu expand/collapse START*/
+#nav_ul > li.fa {
+    display: block;
+    font: 13px FontAwesome;
+    line-height: 2;
+    font-weight: normal;
+    color: #000;
+}
+#nav_ul > li.fa-caret-down::before, #nav_ul > li.fa-caret-up::before {
+    position: absolute;
+    margin: 0 10px 0 0;
+    right:0;
+}
+.expand-collapse {
+    padding-right: 60px;
+    padding-bottom: 10px !important;
+}
+.expand-collapse a {
+    display: inline-block !important;
+}
+/*ITSZ: main menu expand/collapse EOF*/
+
+
+}
+
+
+
+/* for small size : */
+@media (min-width: 0px) and (max-width: 500px) {
+.minimal-menu {width: 100%}
+}

@@ -1,0 +1,249 @@
+/* CDS_styles */
+
+/*********************/
+/* cds_index.tpl.php */
+/*********************/
+
+TD.cds_pageHeading, DIV.cds_pageHeading {
+ font-family: georgia, sans-serif; 
+  font-size: 20px;
+ 
+	color:#a46b3e;
+	padding: 26px 0;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: left;
+}
+
+TD.cds_category_description, P.cds_category_description {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: Georgia, Times;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+DIV.cds_header_img {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+/***********************/
+/* SubCategory Listing */
+/***********************/
+
+TD.cds_listing_category_title {
+	/*Vinh commnet out de xu ly line space nho lai
+  padding-bottom: 5px;
+  */
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin:0;
+  font:bold 14px Arial, sans-serif;
+  color: #7d1904;
+}
+
+
+/*vinh xac dinh thuoc tinh heading tittle */
+TD.cds_listing_category_title a {
+  color: #7d1904;
+ font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+}
+TD.cds_listing_category_title a:hover {
+  color: #7D1904;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 12px;
+}
+/*vinh xac dinh thuoc tinh heading tittle */
+
+
+TD.cds_listing_category_blurb {
+  font:normal 11px Georgia, Times;
+  padding-left: 0px;
+  padding-right: 10px;
+  text-align:justify;
+  color:#000;
+}
+
+TD.cds_listing_category_img {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+}
+
+TD.cds_listing_category_content {
+  padding-top: 5px;
+}
+
+/****************/
+/* Page Listing */
+/****************/
+
+TD.cds_listing_pages_title {
+/*Vinh comment out line space trang contep map 
+  padding-bottom: 2px;
+ */
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin:0;
+  font:bold 10px arial, sans-serif;
+  color: #3d3c3c;
+}
+
+/*Vinh: style one record of listing*/
+TD.cds_listing_pages_title{
+	color: #444;
+	font-size: 12px; font-family: arial, sans-serif;
+	font-weight: normal;
+}
+TD.cds_listing_pages_title a {
+		font-size: 12px; font-family: arial, sans-serif;
+	 border-bottom: 1px solid #CCCCCC;
+    color: #154A7F;
+    font-weight: 700;
+
+}
+TD.cds_listing_pages_title a:hover{
+		font-size: 12px; font-family: arial, sans-serif;
+	 border-bottom: medium none;
+	 text-decoration: none;
+    color: #154A7F;
+    font-weight: 700;
+}
+/*Vinh: style one record of listing EOF*/ 
+
+
+TD.cds_listing_pages_blurb {
+  font:normal 11px Georgia, Times;
+  padding-left: 0px;
+  padding-right: 10px;
+  text-align:justify;
+  color:#000;
+}
+
+TD.cds_listing_pages_img {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+}
+
+TD.cds_listing_pages_content {
+	/*Vinh comment out line space trang contep map  */
+  padding-top: 3px;
+
+}
+
+/******************/
+/* Product Insert */
+/******************/
+
+TD.attach_product {
+  float:right;
+  margin:5px;
+  margin-right:20px;
+  padding:10px;
+  border:1px solid #ccc;
+  clear:both;
+}
+
+DIV.cds_product_name {
+  font:normal 12px Georgia, Times;
+  color: #7d1904;
+  font-weight: bold;
+}
+
+DIV.cds_product_name a { color: #7d1904; background: inherit; }
+
+
+TD.cds_product_buy, DIV.cds_product_buy {
+  font-family: Georgia, Times;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+TD.cds_product_buy, DIV.cds_product_buy a { color:#000000; background: inherit;}
+
+TD.cds_product_insert_width {
+ /* width: 100px; */
+}
+
+DIV.cds_product_price {
+  font-family: Georgia, Times;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+DIV.cds_product_price a { background: inherit;}
+
+
+DIV.cds_product_img {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+
+}
+
+/********************/
+/* Product Info RCI */
+/********************/
+
+TD.cds_pInfoContentBoxHeading {
+  font-family : Georgia, Times;
+  font-size : 10px;
+  font-weight : bold;
+  background : #bbc3d3;
+  color : #ffffff;
+}
+
+TD.cds_pInfoContentBox {
+  font-family : Georgia, Times;
+  font-size : 12px;
+}
+
+/* CDS_style EOF */
+/************************/
+/* CDS HOME PAGE MODULE */
+/************************/
+.cds_home_title, a.cds_home_title {
+  font-family: Georgia, Times;
+  font-size: 12px;
+  font-weight: bold;
+  color: #7d1904;
+  text-decoration:none;
+}
+a.cds_home_title:hover {
+  color: #0451BB;
+  text-decoration:underline;
+}
+span.cds_home_blurb, span.cds_home_body {
+  font-family: Georgia, Times;
+  font-size: 11px;
+  line-height: 1.5;
+}
+td.cds_home_image img {
+  border:0;
+  margin:3px;
+  margin-top:0;
+}
+span.cds_home_readmore {
+  color:#A83345;
+  font-family: Georgia, Times;
+  font-size: 10px;
+  text-decoration:none;
+}
+td.cds_home_spacer {
+  height:1px;
+  background: #CCC;
+}

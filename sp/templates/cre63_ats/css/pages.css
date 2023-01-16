@@ -1,0 +1,1053 @@
+/******************* site map START *************/
+/* all text */
+ul.cat > li.cat a{color: black; text-decoration:none; font-size: 14px  }
+
+
+/* for all category listing */
+ul.cat > li.cat > a {
+    text-transform: uppercase;
+    color: #1683ad;
+    font-weight: bold;
+    
+}
+
+/* category level 1 -customized */
+.pageHeading + ul.cat > li.cat > a {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    background: #1683ad;
+    padding-left: 15px;
+    text-align:center;
+    display: block;
+    margin-top: 20px;
+}
+.pageHeading + ul.cat > li.cat  {
+list-style: none;
+}
+
+
+
+/* for item listing */
+ul.cat > li.cat > ul.page > li.page  a {
+  /*  text-transform: lowercase; */
+  padding: 0x 0px;
+  border: 0px solid red;
+  
+}
+
+ul.cat > li.cat > ul.page  {
+line-height:100%
+  
+}
+
+
+/* first letter of word ==>does not work */
+ul.cat > li.cat > ul.page > li.page a:first-letter {
+    text-transform: uppercase;
+}
+
+ul.cat .see_more {
+font-size: 14px; border:0px solid red;
+margin-left: 20px;
+}
+/******************** site map EOF *************/
+
+/******************* page listing *************/
+.page_description {line-height:150%;}
+.pages_title3{}
+.date{}
+
+/******************* page listing EOF ***********/
+
+
+/******************* PAGE DETAIL pages *****************/
+
+.cds_pages_blurb {
+  font-weight: bold;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.cds_pages_blurb_sub1 {
+  font-size: 40px;
+  color: red;
+  line-height: 100%;
+}
+
+.cds_pages_blurb_sub2 {
+  font-size: 20px;
+  color: black;
+  margin-top: 15px;
+}
+
+
+
+
+.cds_pages_body {
+	text-align: justify;
+}	
+	
+.cds_pages_body img {
+max-width: 100%;
+border:0px solid red;
+margin-left:5%;
+/*
+-webkit-box-shadow: 10px 12px 12px -11px rgb(0 0 0 / 63%);
+-moz-box-shadow: 10px 12px 12px -11px rgba(0,0,0,0.63);
+box-shadow: 10px 12px 12px -11px rgb(0 0 0 / 63%);
+border-radius: 10px;
+*/
+}
+
+ul.box {
+text-align: justify;
+    text-align-last: justify;
+    font-size: 0px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+ul.box li {
+	display: inline-block;
+    /* border: 1px solid gray; */
+    padding: 20px 20px;
+    padding-left: 39px;
+    margin-bottom: 20px;
+    width: 30%;
+    line-height: 100%;
+    text-align: left;
+    text-align-last: left;
+    font-size: 20px;
+    border-radius: 6px;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+
+ul.box li:before {
+    content: url(../../../../images/icon_list.png);
+    position: absolute;
+    margin-left: -23px;
+    margin-top: -2px;
+}
+
+
+
+.cds_pages_body .slogan {
+    border-top: 1px solid #5f5146;
+    border-bottom: 1px solid #5f5146;
+    font-size: 2vw;
+    padding: 38px 0;
+    line-height: 130%;
+    text-align: center;
+    margin: 20px;
+}    
+
+
+/* henry set image float on the LEFT or RIGHT and clear it after paragraph */
+	.imageLeft { float: left; margin: 0 20px 10px 0px; }
+	.imageRight { float: right; margin: 0 0px 10px 20px; }
+
+	.cds_pages_body p { clear:both; }
+/* henry set image float on the LEFT (DEFAULT) or RIGHT and clear it after paragraph EOF */
+
+
+
+
+td.cds_pageHeading {
+/**** henry: refer to /include/runtime/stylesheet/CDS_stylesheet_cre63ats.css ****/
+}
+
+
+/* CSS Document */
+
+
+/* image holder for information pages */
+.image_holder2 {
+   border: 1px solid #9f9d9d;
+	-moz-border-radius:5px;									/* round corner (IE does not work)*/
+	-webkit-border-radius:5px;								/* round corner (IE does not work)*/
+	-opera-border-radius:5px;								/* round corner (IE does not work)*/
+	-khtml-border-radius:5px;								/* round corner (IE does not work)*/
+	border-radius:5px;										/* round corner (IE does not work)*/
+	margin-left: 15px;												/* outer space */
+	margin-bottom: 15px;												/* outer space */
+}
+
+.image_holder2:hover {
+	-moz-box-shadow: 0 0 3px rgba(33,102,85,0.9);			/* glowing effect (IE does not work */
+	-webkit-box-shadow: 0 0 3px rgba(33,102,85,0.9);		/* glowing effect (IE does not work */
+	box-shadow: 0 0 3px rgba(33,102,85,0.9);				/* glowing effect (IE does not work */
+}
+
+
+/* image effect : style 1: http://designshack.net/articles/css/joshuajohnson-2/: need nested div */
+.image {
+  border: 10px solid #fff;  
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.image img:hover {
+  width: 400px;
+  height: 400px;
+}
+
+/* image effect  EOF*/
+
+
+/* image effect : style 2: small thumbail on the right */
+.image_style2 {
+margin-right:15px; 
+margin-top:0px;
+margin-bottom:10px;
+border: 4px solid #c91d23;
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+
+float: left;
+width: 100px;
+height: 100px;
+}
+
+.image_style2:hover {
+border: 4px solid #ED8184;
+-webkit-filter: brightness(120%); 
+-webkit-filter: contrast(150%); 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+/* image effect : style 2: small thumbail on the right -EOF*/
+
+
+
+
+/* image holder for information pages  - EOF*/
+
+/***** henry bo sung thuoc tinh bold_linkSUNG THUOC TINH CHO PHAN PAGE CONTENT de khach hang co the dieu khien dc css ******/
+
+a.bold_link { 
+  color: #f90a0f; 
+  text-decoration: none; 
+  font-weight: bold; 
+  
+  text-decoration: none; 
+
+}
+a.bold_link:hover { 
+  color: #f90a0f; 
+  text-decoration: underline; 
+}
+/*************henry EOF  **************/
+
+
+/***************** For FAQ ************************** */
+.fqa_box_style{
+	width: 700px; 
+	background: #e6e7eb; 
+	padding:5px 5px 5px 15px;
+}
+.faqTitle{
+	
+	font-weight: bold;
+}
+.fqa_box_main{
+	padding-left: 5px;
+}
+
+
+
+
+td.cds_pageHeading {
+/**** henry: refer to /include/runtime/stylesheet/CDS_stylesheet_cre63ats.css ****/
+}
+
+
+/* CSS Document */
+
+
+/* image holder for information pages  http://www.cssmatic.com/box-shadow */
+.image_holder2 {
+   border: 2px solid #F5EEEE;
+	-moz-border-radius:5px;									/* round corner (IE does not work)*/
+	-webkit-border-radius:5px;								/* round corner (IE does not work)*/
+	-opera-border-radius:5px;								/* round corner (IE does not work)*/
+	-khtml-border-radius:5px;								/* round corner (IE does not work)*/
+	border-radius:5px;										/* round corner (IE does not work)*/
+	margin-left: 15px;	 											/* outer space */
+	margin-bottom: 15px;												/* outer space */
+width: auto;
+overflow: hidden;
+
+-webkit-box-shadow: 0px 0px 23px 4px rgba(201,197,201,1);
+-moz-box-shadow: 0px 0px 23px 4px rgba(201,197,201,1);
+box-shadow: 0px 0px 23px 4px rgba(201,197,201,1);
+
+}
+
+.image_holder2:hover {
+-webkit-box-shadow: 0px 0px 23px 4px rgba(179,172,179,1);
+-moz-box-shadow: 0px 0px 23px 4px rgba(179,172,179,1);
+box-shadow: 0px 0px 23px 4px rgba(179,172,179,1);
+}
+
+
+
+/* image effect : style 1: http://designshack.net/articles/css/joshuajohnson-2/: need nested div */
+.image {
+  border: 10px solid #fff;  
+  height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.image img:hover {
+  width: 400px;
+  height: 400px;
+}
+
+/* image effect  EOF*/
+
+
+/* image effect : style 2: small thumbail on the right */
+.image_style2 {
+margin-right:15px; 
+margin-top:0px;
+margin-bottom:10px;
+border: 4px solid #c91d23;
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+
+float: left;
+width: 100px;
+height: 100px;
+}
+
+.image_style2:hover {
+border: 4px solid #ED8184;
+-webkit-filter: brightness(120%); 
+-webkit-filter: contrast(150%); 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+/* image effect : style 2: small thumbail on the right -EOF*/
+
+
+
+
+/* image holder for information pages  - EOF*/
+
+/***** henry bo sung thuoc tinh bold_linkSUNG THUOC TINH CHO PHAN PAGE CONTENT de khach hang co the dieu khien dc css ******/
+
+a.bold_link { 
+  color: #f90a0f; 
+  text-decoration: none; 
+  font-weight: bold; 
+  
+  text-decoration: none; 
+
+}
+a.bold_link:hover { 
+  color: #f90a0f; 
+  text-decoration: underline; 
+}
+/*************henry EOF  **************/
+
+
+
+/* henry special structure for some page */
+
+
+/***** row page style 1 : 2 columns uneven width - start *****/
+.row_page1{padding-top: 30px}
+.row_page1 .column1{
+	float: left;
+	width: 45%;
+	margin-left: 10%;
+	margin-right: 5%;
+
+}
+.row_page1 .column2{
+	float: right;
+	width: 35%;	
+	margin-right:5%;
+}
+
+/***** row page style 1 : 2 columns uneven width- EOF *****/
+
+
+/**** row page style 2: 1 column with circle start  ****/
+.row_page2{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.row_page2 .circle{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+.row_page2 .circle:hover {
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+
+.row_page2 .circle9{
+    text-align: center;
+    width: 200px;
+ /*   height: 200px;*/
+    float: left;
+    margin: 0 15px;
+    position: relative;
+ /*   overflow: hidden; */
+}
+
+.row_page2 .circle9:hover {
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+
+.row_page2 .h2{
+background:#1683ad; 
+color: white; 
+padding: 5px;
+padding-left:10px; 
+margin-left: 0;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	     
+}
+.row_page2 .h2{
+    margin-bottom: 10px;
+}
+
+.row_page2 .h2 .text{
+font-style: normal;	 
+text-transform: uppercase;    
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.row_page1 img:hover{
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+/**** row page style 2: 1 column with circle - EOF ****/
+
+
+/*** row page style 3: 2 columns even width start ****/
+.row_page3 {margin-bottom: 30px;}
+.row_page3 .column{
+	float: left;
+	width: 45%;
+	padding-top: 0%;
+	margin-left:0%;
+	margin-right:10%;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.row_page3 .column:last-child{margin-right:0%;}
+
+.row_page3 .heading{
+font-size: 20px;
+text-transform: uppercase;
+margin-bottom:30px;     
+}
+.row_page3 img {
+margin-bottom: 20px;
+transition: all .2s ease-in-out ;
+}
+
+
+.row_page3 img:hover {
+        transform: scale(1.05) ;
+transition: all .2s ease-in-out ;
+
+}
+
+/*** row page style 3: 2 columns EOF  ****/
+
+
+
+
+/**** row page style 4: 1 column - START */
+
+.row_page4{background:#1f1e1e; text-align: center;width: 100%;}
+.row_page4 .column1{
+	/*margin-left: 10%;
+	margin-right: 10%;*/
+    display: inline-block;
+}
+
+.row_page4 .heading{
+    text-align: center;
+    font-size: 32px;
+    color: #27adf7;
+    margin: 30px;
+    text-transform: uppercase;
+	font-family: 'Roboto Condensed', arial;
+}
+
+.row_page4 .circle_container{
+text-align: center;
+/*margin-right: 20%;
+margin-left: 20%;*/
+
+}
+
+
+.row_page4 .circle{
+    text-align: center;
+    border: 2px solid #27adf7;
+    background: black;
+    width: 135px;
+    height: 135px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin: 0 40px;
+    position: relative;
+}
+.row_page4 .circle:before{
+    font-family: FontAwesome;
+    content: "\f00c";
+    position: absolute;
+    top: -17px;
+    left: 39%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    color: #27adf7;
+}
+
+
+.row_page4 .circle9{
+    text-align: center;
+    width: 200px;
+ /*   height: 200px;*/
+    float: left;
+    margin: 0 15px;
+    position: relative;
+ /*   overflow: hidden; */
+}
+
+.row_page4 .circle9:hover {
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+
+
+.row_page4 .circle .text{
+font-size: 16px;
+color: #27adf7;
+padding-top:30%;
+padding-left: 10px;
+padding-right:10px;
+}
+
+.row_page4 .circle9 .text{
+font-size: 14px;
+color: #27adf7;
+line-height: 150%;
+padding-top: 20px;
+}
+
+.row_page4 .circle:hover {
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+
+/**** row page style 4: 1 column - EOF */
+
+
+
+/*** row page style 5: 3 columns even width start ****/
+.row_page5 {margin-top: 30px}
+.row_page5 .heading {font-weight: bold; }
+
+.row_page5 .column{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	border: 0px solid gray;
+	box-sizing: border-box;	
+	padding: 20px;
+	margin-bottom:10px;	
+}
+
+.row_page5 .column:last-child{
+	margin-right: 0%;
+}
+
+
+
+.row_page5 img:hover {
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+
+
+/*** row page style 5: 3 columns even width - EOF ****/
+
+/*** row page style 6: 4 columns even width start ****/
+.row_page6 {margin-top: 30px;margin-bottom: 30px}
+.row_page6 h2{ 
+text-align: center;
+font-family: 'Roboto Condensed', Arial;
+font-size: 50px;
+color: #005f97;
+text-transform: uppercase;
+font-style: normal;
+margin-bottom: 40px;
+}
+
+.row_page6 .column{
+	float: left;
+	width: 24%;
+	padding:0px;
+	overflow: hidden;
+	box-sizing: border-box;
+/*	background-color: #e8e5e5; */
+	margin-right: 1%;
+
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-opera-border-radius:10px;
+-khtml-border-radius:10px;
+border-radius:10px;
+border: 2px solid #81bde0;
+	
+}
+
+.row_page6 .column:hover{
+	background-color: #d6eff9; 
+}
+
+/* hover effect: when hover the box==>target the image inside */
+.row_page6 .column:hover .icon img {
+    -webkit-animation: hvr-pop 0.6s forwards;
+    animation: hvr-pop 0.6s forwards;
+}
+
+
+.row_page6 .column .heading{
+text-align: center;
+font-family: 'Roboto Condensed', Arial;
+font-size: 30px;
+color: #005f97;
+text-transform: uppercase;
+margin-top: 30px;
+margin-bottom: 15px;
+font-weight: normal;
+min-height: 60px;
+line-height: 100%;	
+}
+
+
+.row_page6 .column .icon{
+text-align:center;
+}
+.row_page6 .column .icon img{
+max-height:80px;
+}
+
+
+.row_page6 .column .text{
+font-size: 14px;
+color: #005f97;
+padding: 15px;
+padding-left: 0px;
+line-height: 150%;
+min-height: 120px;
+}
+
+
+
+/*** row page style 6: 4 columns even width - EOF ****/
+
+
+
+
+
+.heading_banner {
+    position: relative;
+}
+.heading_banner img {
+    width: 100%;
+ /*   padding-top: 15px; henry hide. dont know why we need it*/
+}
+.heading_title {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: roboto;
+    padding-left:20px;
+    color:#FFF;
+    font-weight: bold;
+}
+.center2 .row_page1, .center2 .row_page2, .center2 .row_page3, .center2 .row_page4{
+    font-size: 14px;
+    color: #abb6be;
+    text-align: left;
+}
+.center2 .row_page4{
+    text-align: center;
+}
+
+
+/* henry special structure for some page - EOF*/
+
+
+
+/******************** PAGES and PAGES CATEGORY  *********************************/
+/* cell hover for listing */
+table.pages_title a {
+	display: block;
+}
+
+/**** style 1 - default */
+.pages_title{
+border-bottom: 1px dotted #c4c3c3; 
+padding: 10px;
+line-height:120%;
+}
+
+.pages_title:hover{
+background-color: #d7f2f7;
+}
+
+a.pages_title_link{
+font-size: 14px;
+line-height: 150%;
+}
+
+
+a.pages_title_link:hover{
+text-decoration: none;
+}
+
+
+/*** style 2 *****/
+.pages_title2{
+padding: 7px 0px;
+padding-left: 5px;
+border-bottom: 1px dotted #c4c3c3;   
+color: white;
+/* font-weight: bold; */
+}
+
+.pages_title2_selected{
+color: #81211c;
+}
+
+.pages_title2:hover{
+text-decoration: none;
+/* background-color: #fa7f82; */
+}
+
+a.pages_title_link2:{
+text-decoration: none;
+}
+a.pages_title_link2:hover{
+text-decoration: none;
+}
+
+
+/*IT Service Zone: Start */
+a.pages_title_link2{
+text-decoration: none;
+color: white;
+}
+a.pages_title_link2 i.fa.fa-caret-right{display: none}
+a.pages_title_link2_selected{
+text-decoration: none;
+color: yellow;
+}
+a.pages_title_link2:hover {
+text-decoration: underline;
+}
+a.pages_title_link2:hover i.fa.fa-caret-right{
+    display: block;
+}
+
+ul.bullet_style li{
+    position: relative;
+}
+i.fa.fa-caret-right {
+    position: absolute;
+    left: -32px;
+    top: 5px;
+    color: yellow;
+    font-size: 16px
+}
+ul.bullet_style li:nth-child(-n+9) i.fa.fa-caret-right {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    color: yellow;
+    font-size: 16px
+}
+
+/*IT Service Zone: EOF */
+
+
+/* style 2 EOF */
+
+
+/*** style 3 *****/
+
+.pages_title3, a.pages_title3{
+	color: #000;
+	text-decoration: none; 
+	font-family: "Roboto Condensed", Arial, FreeSans, sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.pages_title3:hover{
+	text-decoration: underline;
+}
+
+a.pages_title_link3:{
+text-decoration: none;
+}
+a.pages_title_link3:hover{
+text-decoration: none;
+}
+
+/* style 3 EOF */
+
+
+
+
+a.pages_content{
+	color: #605f5d; 
+	font-style:italic;
+	text-decoration: none;
+
+}
+a.pages_content:hover{
+	font-size: 10pt; 
+	color: #605f5d; 
+	font-style:italic;
+	text-decoration: none;
+
+}
+
+.pages_content p {
+	line-height: 12pt;
+}
+
+.page_content
+{
+text-align: justify;
+
+}
+
+
+/* henry: for next and previous button */
+.pagination-button{
+width:100%;
+text-align: justify;
+padding-bottom: 10px;
+overflow: hidden
+}
+.next{float: right
+} 
+/* henry: for next and previous button  EOF */
+
+
+/******************** PAGES and PAGES CATEGORY  SECTION EOF *********************************/
+
+
+/***************** For FAQ ************************** */
+.fqa_box_style{
+	width: 700px; 
+	background: #e6e7eb; 
+	padding:5px 5px 5px 15px;
+}
+.faqTitle{
+	
+	font-weight: bold;
+}
+.fqa_box_main{
+	padding-left: 5px;
+}
+/***************** For FAQ EOF ************************** */
+
+
+a.view_more {
+color: #07abd7;
+}
+
+.date {
+color: #07abd7;
+font-style: italic;
+}
+
+.pages_photo {
+float: left;
+border: 1px solid gray;
+margin-right: 10px;
+width: 150px;
+height: 100px;
+overflow: hidden;
+}
+
+
+.pages_description {
+text-align:justify;
+
+}
+
+.pages_block{
+padding-top: 15px;
+padding-bottom: 15px;
+text-align: left;
+text-align-last: left;
+
+}
+
+.pages_divider{
+clear:both; 
+height: 1px; 
+border-bottom: 1px solid gray; 
+padding-top:20px; 
+
+}
+
+
+/* for small view such as iphone, samsung : nho hon 768 */
+@media (min-width: 0px) and (max-width: 767px) {
+
+    /*Contact US Responsive START*/
+    .heading_title {        font-size: 22px;        padding-left:5px;        top:50%;    }
+    .row_page1 .column1 {        float: none;        width:80%;        margin-left: 10%;        margin-right: 10%;    }
+    .row_page1 .column2 {        float: none;        width: 100%;        text-align: center;    }
+    .row_page2 { margin:0}
+
+    .row_page3 .column { width: 100%; margin-left: 0;}
+
+    .row_page4 .column1 {        margin-left: 0;        margin-right: 0;    }
+    .row_page4 .circle_container {        text-align: center;        margin-right: 0;        margin-left: 0;        display: inline-block;    }
+    .row_page4 .text {
+        font-size: 12px;
+         padding-top: 0;
+         padding-left: 0;
+         padding-right: 0;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .row_page4 .circle {
+        width: 120px;
+        height: 120px;
+        /* Internet Explorer 10 */
+        display:-ms-flexbox;
+        -ms-flex-pack:center;
+        -ms-flex-align:center;
+
+        /* Firefox */
+        display:-moz-box;
+        -moz-box-pack:center;
+        -moz-box-align:center;
+
+        /* Safari, Opera, and Chrome */
+        display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+
+        /* W3C */
+        display:box;
+        box-pack:center;
+        box-align:center;
+        margin: 0 10px;
+    }
+    .row_page4 .text {        line-height: 20px;    }
+    .row_page4 .circle:before {        font-size: 45px;    }
+
+.row_page5 .column {width: 100%}
+
+.row_page6 .column{width: 100%; margin-bottom: 10px;}
+.row_page6 .column .text{min-height: initial; padding: 0px;}
+.row_page6 .column .heading{min-height: initial; margin:10px}
+
+
+
+}
+
+/* for super small size : iphone 5-6*/
+@media (min-width: 0px) and (max-width: 420px) {
+    .row_page4 .circle {
+        width: 100px;
+        height: 100px;
+        margin: 0 3px;
+    }
+    .heading_title {
+        font-size: 14px;
+        top:40%;
+    }
+    .row_page4 .text {
+        line-height: 16px;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 380px) {
+    .row_page4 .circle {        width: 80px;        height: 80px;        margin: 0 3px;    }
+    .heading_title {        font-size: 12px;        top:40%;    }
+}

@@ -1,0 +1,42 @@
+
+@import url("menu.css"); 									/* henry: bo sung css cho button */
+
+
+
+/****add -on for menu style3 ******/
+
+
+div#menu ul.menu {
+display: flex;						/* henry: jusity both side:  place sub items with same padding */
+justify-content: space-around;		/* henry: jusity both side:  add same padding before first one and after last one */
+}
+div#menu > ul > li > a {border: none}
+
+
+/*********** RESPONSIVE STRUCTURE START ************/
+
+
+@media (max-width: 4000px) {
+	div#menu span {    padding: 9px 10px 10px 10px;}
+
+}
+
+
+/*ITSZ: in case of medium screen 768-1024: move the whole menu to a new line below logo - start */
+
+@media (max-width: 1030px){
+	.flex-container {display:block}					 /* change from flex to block so that menu block goes underneed logo block*/
+	div#menu {margin-top: 0px; margin-bottom:20px;}
+	div#menu span {   font-size:1.9vw}
+}
+
+/*ITSZ: in case of medium screen, move the whole menu to a new line below logo - EOF */
+
+@media (min-width: 0px) and (max-width: 768px) {
+	.flex-container {display: flex}					 /* change from block to flex so that menu block goes inline with logo and menu sandwitch*/
+
+}
+
+/*********** RESPONSIVE STRUCTURE EOF ************/
+
+/****add -on for menu style3 - EOF ******/

@@ -1,0 +1,42 @@
+/***
+
+this style below is use for all top styles that has the same common point
+
+***/
+
+
+.desktop-search {
+padding: 5px;
+background: #151f36;    
+border-radius: 5px;
+;
+
+}
+
+.fa-cog, .fa-shopping-cart, .fa-sign-out, .fa-search {font-size: 30px; color: #c5beb3}
+
+
+
+
+/******** RESPONSIVE STRUCTURE - START *************/
+@media (min-width: 0px) and (max-width: 767px) {
+
+
+.desktop-search {margin:10% 0; padding:0}
+
+
+.item-mobile{display: none;}
+.cart-mobile{
+    display: inline-block;
+	color: #FFFFFF;
+	float: right;
+	padding-top: 7px;
+	margin-right: 5px;
+	}
+.cart-mobile a, .cart-mobile fa{    color:#FFFFFF;}
+.flex-item.top-nav{display: none;}
+.mobile-login{display: inline-block;float: right; margin-top: 5px}
+.fa-cog, .fa-shopping-cart, .fa-sign-out, .fa-search {font-size: 18px}
+
+} 
+/******** RESPONSIVE STRUCTURE - END *************/

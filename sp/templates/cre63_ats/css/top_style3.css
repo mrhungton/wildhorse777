@@ -1,0 +1,329 @@
+/*************** TOP SECTION*********************/
+.top1{
+border-bottom: 0px solid #9E2872;
+-webkit-box-shadow: 0px 1px 3px 0px rgba(112,111,112,0.87);
+-moz-box-shadow: 0px 1px 3px 0px rgba(112,111,112,0.87);
+box-shadow: 0px 1px 3px 0px rgba(112,111,112,0.87);
+text-align: center;
+font-size: 1.0vw;
+font-family: 'Open Sans', Arial;
+padding: 0;
+background: #084d69;
+}
+.top1 span{
+padding-left: 20px;
+color: #c1bfbf;
+}
+.top1 a:hover{
+text-decoration:none;
+color: #b8bcbf;
+}
+.top2{
+display: none;
+border:0px solid red; 
+border-bottom: 1px solid #e2e0e0;
+padding: 5px 0;
+
+ margin-top: 0px;     			  /* IT Sevice Zone: Static top3 : Henry hide to see what happend..*/
+/* Henry important note: 
+above setting is work for any pages other than home page
+for home page, please go to /cms/slideshow_wow/engine1/style.css > search for .top2 (padding:, margin) to see control top2 in home page 
+*/
+
+}
+	
+.top3{
+border-bottom: 4px solid #d6d3d3;
+/*height:auto;		*/			/* Henry: to fix issue with big gray gap, Icon Menu responsive*/
+/* position:fixed !important; */   		/* henry unhide to make top frozen */
+/* width: 100%; */
+/* top: 0px;  */   /* henry hide:  this is bad code because it make div become absolute. */
+z-index: 999999; /*IT Service Zone: responsive issue menu div fixed*/
+background-image:url('../../../../images/top3_bg.png'); 
+background-repeat: repeat;
+background-position-x: -150px;
+padding: 1% 60px;
+}
+.top3.fixed {
+    position: fixed;
+    z-index:1;
+    top: 0px; 
+    right:0;
+    left:0;
+    background: #ffffff;
+    padding: 0 60px;
+	/* henry code below is for animation effect - start */
+  -webkit-animation-name: fixed;
+  animation-name: fixed;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes fixed {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fixed {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+	/* code below is for animation effect - EOF */
+}
+.top3-3{
+float: right;
+margin: 0px;
+color: #326603;
+text-align: center;
+font-family: "Open Sans", Arial;
+font-weight: bold;
+position: relative;
+border: 0px solid #c5c5c5;
+border-radius: 5px;
+padding:10px;
+}
+.top3-1{
+}
+.top3-1{
+}
+/* slider bg */
+.top4{
+border:0px solid red; 
+border-bottom: 0px solid gray;
+}
+/********* inside  for top 1 *******************/
+/* box generated from  http://the-echoplex.net/flexyboxes/ */
+.flex-container {
+    display: -webkit-box; /*IT Service Zone: adjustment for safari browser*/
+    -webkit-box-pack: justify; /*IT Service Zone: adjustment for safari browser*/
+    -webkit-box-align: center; /*IT Service Zone: adjustment for safari browser*/
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+    .flex-container::nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+    .flex-container::nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+    .flex-container::nth-child(3) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+     
+/********* inside  for top 1 - EOF *******************/
+#logo_bottom a , #logo_bottom-scroll a{
+    background: url(../../../../images/logo_bg.png) no-repeat;
+    width: 342px;
+    height: 100px;
+    text-indent: -1000px;
+    overflow: hidden;
+    display: block;
+}
+
+.tel, .tel a, .tel:visited, .tel:visited a  {
+            font-size: 1.5vw;
+            font-weight: bold;
+           /* text-shadow: 1px 2px 3px #666; */
+            padding: 0px 0px;
+            line-height: 150%;
+			margin-top:10px;            
+}
+.mobile-logo{visibility: visible;
+             position: relative;
+             padding-left: 0px;
+}
+.mobile-search{display: none}
+
+.mobile-logo-top{display: none}
+.category_nav{ padding-left:9px}
+
+.flex-item.top-nav .name_group{
+    padding-right: 30px;
+}
+.flex-item.top-nav .logout{
+    padding-right: 30px;
+}
+.mobile-logo-scroll{display: none;}
+/*ITSZ: menu customization for style3 START*/
+/*
+div#menu span {
+    padding: 5px 15px 6px 15px;
+    font: normal 1.0 vw 'Open Sans',Arial,FreeSans,sans-serif;
+}
+*/
+/*ITSZ: menu customization for style3 EOF*/
+
+.tab_phone {position: absolute;
+    right: 72px;
+    background: green;
+    border-radius: 10px;
+    padding: 6px 10px;
+    line-height: 120%;
+    color: white;
+    z-index:99; 
+    }
+
+/************************ Responsive Structure ****************/
+/* for new/big desktop from 1200 px and bigger ....*/
+@media (min-width: 1200px) and (max-width: 3000px) {}
+/* for medium/old desktop screen from 1024 to 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+   .top3{padding: 0px 40px}
+}
+@media (max-width: 1200px){
+    .top3-3 {
+   /* position: absolute;*/
+    padding-left: 13px;
+    padding-bottom: 10px;}
+}
+/* for desktop/ipad screen from 768 to ~ */
+@media (min-width: 768px) { 
+.column_center{
+        margin-top: 0 !important; /*ITSZ: override inline margin-top by 0 in desktop*/
+	 padding-bottom: 60px; 
+   }
+}
+/* for small view such as iphone, samsung : less than 768 */
+@media (min-width: 0px) and (max-width: 767px) {
+
+
+
+.flex-container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    }
+
+.flex-item{}
+
+    .top3{ position: relative; 
+/*    height: 60px;  */ /* henry hide this so that top3 cover shopping icon and login icon */
+    padding: 0 10px;
+    padding-bottom: 10px;
+    }
+    .top2{background: #FFF;}
+	.top1{font-size: 12px; padding: 0; line-height: 120%}
+	.top1 span {padding-left: 5px; }
+/*IT Service Zone: kill white space before slider in homepage only START*/
+.top2 {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+    margin-top: 0 !important;
+}
+/*IT Service Zone: space before slider in homepage only EOF*/    /*IT Service Zone: EOF*/
+    /*IT Service Zone: 12/08/2016 header START*/
+    div.breadcrumbs, div.category_desc{
+        display: none;
+    }
+
+    .mobile-paging{display: none;}
+    .mobile-logo-top{
+        float: left;
+        width: 35px;
+        height: 45px;
+        display: none;
+    }
+    .mobile-logo-top img {
+        width: 22px;
+        /* display: inline-block; */
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-right: 13px;
+    }
+    .extra{
+        color: #7d7878;
+        padding: 0 0 0 15px;
+    }
+    /*IT Service Zone: 10/08/2016 header EOF*/
+    /*ITSZ: logo on top when scroll START*/
+    .mobile-logo-scroll{
+        display: none;
+        position: relative;
+    }
+    .mobile-logo-scroll.scroll{display: block;}
+    /*.flex-item.mobile-logo.scroll{display: none;}*/
+    .logo-content{
+        padding: 0 0 0 0;
+        top: 0px;				/* henry move logo down a little bit */
+        position: absolute;
+        display: none;
+        left: 0;
+        box-sizing: border-box;
+        width: auto;			/* value 50% if you want to make it center */	
+        margin-left: 30px;		/* value 30% if you want to make it center */
+        z-index: 1;
+    }
+    /*ITSZ: logo on top when scroll EOF*/
+    label.minimal-menu-button:before {
+        left: 5px;
+        border-bottom: 4px solid #343232;
+        border-top: 13px double #343232;
+    }
+    label.minimal-menu-button {
+        height: auto;
+    }
+	.tel, .tel a, .tel:visited, .tel:visited a  {font-size: 12px}
+	
+	.tab_phone {display: none; position: absolute; padding: 2px 5px; font-size: 13px; top:60px; left:50%;  transform: translate(-50%, 0); width: fit-content}    
+}
+@media (min-width: 0px) and (max-width: 380px) {
+    .cart-mobile{padding-left: 10px;}
+
+
+}/************************ Responsive Structure EOF ****************/

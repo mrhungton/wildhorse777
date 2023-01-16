@@ -1,0 +1,283 @@
+/* henry: see extra css files at templates/cre63_ats/css/   */
+
+@import url("css/button.css"); 									/* henry: bo sung css cho button */
+@import url("css/cell_hover.css"); 								/* henry: bo sung css cho hieu ung hover effect tren product listing */
+@import url("css/image_hover_effect.css"); 						/* henry: bo sung css cho table listing */
+@import url("css/table.css"); 									/* henry: bo sung css cho table listing */
+@import url("css/table_responsive.css"); 						/* henry: bo sung css cho table listing */
+@import url("css/animations.css"); 								/* henry: bo sung css cho animation gallery */
+
+
+@import url("css/catbox.css"); 									/* henry: bo sung css cho cat box product design */
+@import url("css/pages.css"); 									/* henry: bo sung css cho page */
+@import url("css/photo_media.css"); 							/* henry: bo sung css cho photo media page */
+
+@import url("css/template.css");
+@import url("css/form.css"); 
+/* henry hide this since it effect the category box on the left 
+@import url("css/infobox.css"); 
+*/
+@import url("css/contentbox.css");
+@import url("css/popup.css");
+@import url("css/calender.css");  
+@import url("css/errors_messages.css");
+
+
+#demo-header-container {
+  width: 100%;
+  height: 75px;
+  background: url("../../images/chua_phan_loai/demo-header-background.png") repeat-x top;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 60px;
+}
+#demo-footer-container {
+  width: 100%;
+  height: 58px;
+  background: url("../../images/chua_phan_loai/demo-footer-background.png") repeat-x top;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.boxText {
+
+}
+.productsNotifications { 
+    background: #f2fff7; 
+}
+.orderEdit { 
+    font-size : 10px; 
+    color: #70d250; 
+    text-decoration: underline; 
+}
+
+td.headerNavigation, td.headerNavigation a:link, td.headerNavigation a:visited { color:#8b8b8b; text-decoration:none; font-weight: bold; font-size: 12px;}
+td.headerNavigation a:hover { color:#195184; text-decoration:underline;}
+
+
+/* unsure on this, checking... */
+.infoBoxContentsLeft_categ{
+  color: #17426B;
+}
+.infoBoxContentsLeft_categ A:link, .infoBoxContentsLeft_categ A:active, .infoBoxContentsLeft_categ A:visited{
+  font-size: 11px;
+  font-weight: normal;
+  color: #5E5E5E;
+}
+.infoBoxContentsLeft_categ A:hover {
+  color: #17426B;
+}
+.infoBoxContentsLeft A:link, .infoBoxContentsLeft A:active, .infoBoxContentsLeft A:visited{
+  font-size: 10px;
+  font-weight: normal;
+  color: #005EA7;
+}
+.infoBoxContentsLeft A:hover {
+  color: #17426B;
+}
+.infoBoxContentsRight A:link, .infoBoxContentsRight A:active, .infoBoxContentsRight A:visited{
+  font-size: 10px;
+  font-weight: normal;
+  color: #005EA7;
+}
+.infoBoxContentsRight A:hover {
+  color: #17426B;
+}
+.infoBoxContentsCenter A:link, .infoBoxContentsCenter A:active, .infoBoxContentsCenter A:visited{
+  font-size: 10px;
+  font-weight: normal;
+  color: #005EA7;
+}
+.infoBoxContentsCenter A:hover {
+  color: #17426B;
+}
+
+.az_top_nav A:link, .az_top_nav A:active, .az_top_nav A:visited{ 
+  font-size: 10px; 
+  color: #FFFFFF;
+  font-weight: normal;
+  text-decoration: none;
+  }
+  .az_top_nav A:hover{
+  font-size: 10px;
+  color: #17426B;
+  }
+
+  .az_pageheading_main{
+  padding-left: 15px;
+  padding-right: 10px;
+  }
+  td.infoBoxHeadingLeft_categ, td.infoBoxHeadingLeft {
+  background-image: url("images/az_leftbox_top.gif");
+  background-repeat:  no-repeat;
+  height: 41px;
+  }
+  td.infoBoxContentsLeft_categ{
+  background-image: url("images/az_leftbox_category.gif");
+  background-repeat:  no-repeat;
+  background-position: top left;
+  height: 25px;
+  padding-top: 3px;
+  padding-left: 25px;
+  font-size: 10px;
+  }
+  .infoBoxMBottomleft_az01, .infoBoxMBottomleft{
+  background-image: url("images/az_leftbox_bottom.gif");
+  background-repeat:  no-repeat;
+  height: 5px;
+  padding-bottom: 5px;
+  }
+  /* RIGHT bar css controls */    
+
+.main_page_promo{
+  background-image: url("images/az_promo_box_mid.gif");
+  background-repeat:  repeat-x;
+  background-position: bottom left;
+  height: 42px;
+  }
+    
+/* used in featured_products.php mainpage module*/
+td.price_mainpage{
+    color:#920e16;
+    font-weight: bold;
+}
+td.price_mainpage s{
+    color:#5E5E5E;
+    font-weight: bold;
+}
+td.price_mainpage span{
+    color:#EF5502;
+    font-weight: bold;
+}
+
+.blurbs {
+  width:493px;
+/*  background-color:#FFFFFF; */
+  border: 0px #195184 solid;
+  margin-left:2px; 
+  margin-right:2px; 
+  margin-top:0.2em; 
+  margin-bottom:0;
+  padding-right: 10px;
+  padding-left: 10px; 
+
+  font-size: 12px;
+  font-weight: normal;
+  color: #17426B;
+}
+.cat_title_left{
+	color: #3d3b3c;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+
+/***** henry: AJAX Shopping cart --start */
+
+.black_overlay{
+	display: nones;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content p,.white_content a {
+
+color: white;
+    margin:0;
+}
+.white_content a {
+    text-align: center;
+    margin-top: 26px;
+    display: block;
+    color: white;
+}
+
+.white_content {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    padding: 16px;
+    border: 5px solid #4a4646;
+    background-color: #07abd7;
+    z-index: 1002;
+    overflow: auto;
+    font-size: 15px;
+    text-align: center;
+color: white;
+}
+
+.shopping-cart-box {
+    position: absolute;
+    top: 100px;   /*changed by rixing*/
+    margin-left:-100px; /*added by rixing*/
+    min-width: 335px;
+    color: #FFD5D5;
+    background: #07abd7;
+    border-radius: 4px;
+    padding: 10px;
+    font: small Verdana, Geneva, sans-serif;
+    margin-top: 10px;
+    display: none;
+    z-index: 999;
+    border:0px solid red;
+}
+
+.shopping-cart-box:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 55%;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #07abd7;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+.shopping-cart-box a {
+    color: #FFD5D5;
+    text-decoration: none;
+}
+.shopping-cart-box .close-shopping-cart-box {
+    float: right;
+}
+
+.shopping-cart-box h3 {
+    margin: 0;
+    padding: 0px 0px 5px 0px;
+}
+.shopping-cart-box ul.cart-products-loaded {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#shopping-cart-results ul.cart-products-loaded li {
+    background: #00A2BD;
+    margin-bottom: 1px;
+    padding: 6px 4px 6px 10px;
+}
+.shopping-cart-box .remove-item {
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+.shopping-cart-box .cart-products-total {
+    font-weight: bold;
+    text-align: right;
+    padding: 5px 0px 0px 5px;
+}
+
+/***** henry: AJAX Shopping cart -- EOF */

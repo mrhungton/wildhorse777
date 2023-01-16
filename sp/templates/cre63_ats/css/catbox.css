@@ -1,0 +1,404 @@
+
+div.cat_all { 
+  display: block;
+  color: #e64802;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted gray;
+}
+
+a.cat_all { 
+  color: #e64802;
+}
+
+div.cat_parent { 
+  display: block;
+  color: #e64802;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.category_parent, .category_parent2a{
+	border-top: 1px solid #e1e1e1;	
+	padding: 5px 0px;
+}
+
+.category_parent:hover, .category_parent2a:hover{
+	background: #F5F3F3;
+}
+
+
+.catbox_count{
+font-size: 12px;
+}
+
+.catbox_level_1
+{
+padding: 6px 0px;
+padding-left: 15px;
+border-bottom: 0px dotted #c4c3c3;   
+margin-left: 0px;
+/* color: #383838; */
+}
+
+.catbox_level_1:hover{
+text-decoration: none;
+}
+
+
+
+
+.catbox_level_2
+{
+  padding-left: 30px;
+  padding-right: 0;
+  text-align:left;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /*IT Service Zone: category long item name START*/
+    display: inline-block;
+    line-height: 145%;
+    text-indent: -4px;
+    max-width:70%;
+  /*IT Service Zone: category long item name EOF*/
+
+}
+.catbox_level_2:hover{
+
+}
+
+
+.catbox_level_3
+{
+  padding-left: 40px;
+  text-align:left;
+  background-repeat: no-repeat;
+}
+/*IT Service Zone: category long item name cat_level_3 START*/
+.catbox_level_3_span{
+    padding-left: 10px;
+    text-align:left;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    display: inline-block;
+    line-height: 145%;
+    text-indent: -4px;
+}
+/*IT Service Zone: category long item name cat_level_3 EOF*/
+.catbox_level_2:hover{
+}
+
+.catbox_level_3 a.catbox{
+font-weight: normal
+}
+
+.catbox_level_3 a.catbox:hover{
+text-decoration: underline;
+}
+
+
+.catbox_level_2 .fa, .catbox_level_3 .fa{
+color: #D0CBCB;
+font-size: 6px;
+}
+
+a.catbox, a.catbox2
+{
+  color: #383838;
+}
+a.catbox:hover, a.catbox2:hover {
+text-decoration: none;
+color: #C91D23;
+}
+
+
+
+span.catbox_selected {
+  color: #C91D23;
+  font-weight:bold;
+/*  background: #e5e5e5; */
+  /*display: block;*/
+  padding-left: 15px;
+  text-align:left;
+  padding-bottom: 5px;
+  padding-top: 5px;
+	border: 0px solid red;
+	border-bottom: 0px solid #d9d9d9;
+}
+
+span.catbox_selected:hover{
+}
+
+span.catbox_selected_level2 {
+	font-weight: bold;
+	color: #c91d23;
+}
+span.catbox_selected_level3 {
+	font-weight: bold;
+}
+span.catbox_selected_level2:hover{
+}
+
+/* IT Sevice Zone: Category Expand Collapse */
+
+.category_parent.fa, .category_parent2.fa {
+    display: block;
+    font: 13px FontAwesome;
+    line-height: 2;
+	font-weight: normal;
+}
+
+.category_parent.fa:hover, .category_parent2.fa:hover {
+	color: #C91D23;
+}
+
+.category_parent.fa-caret-down:before, .category_parent.fa-caret-up:before {
+    float: right;
+    margin: 0 10px 0 0;
+}
+.category_parent2.fa-caret-down:before, .category_parent2.fa-caret-up:before {
+    float: right;
+    margin: 0 10px 0 0;
+}
+.category_parent, .category_parent2 { 
+/*  background: #e5e5e5; */
+  }
+ 
+.category_child, .category_child2 {
+/*  background: #fff; */
+  }
+  .expand-collapse{
+	text-align: right;
+    font-size: 12px;
+  }
+  .expand-collapse a{
+    font-size: 12px;
+	font-style:italic;
+	padding: 0 10px;
+  }
+  .expand-collapse a:hover{
+	font-style:normal;
+  }
+
+
+  /*Category Expand Collapse EOF*/
+  
+
+/*IT Service Zone: Responsive left side menu START*/
+.column_left_responsive{
+    display: none;
+}
+
+.column_left_responsive nav {
+    margin: 0;
+    padding: 0;
+}
+
+.column_left_responsive #logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+}
+
+.column_left_responsive nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column_left_responsive nav ul {
+    /*float: right;*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.column_left_responsive nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+.column_left_responsive nav a {
+    display: block;
+    padding: 0 20px;
+    /*font-size: 20px;
+    line-height: 60px;*/
+    text-decoration: none;
+}
+
+.column_left_responsive nav ul li ul li:hover {
+    /*background: #000000; */
+}
+
+.column_left_responsive nav a:hover { /*background-color: red;*/ }
+
+.column_left_responsive nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+.column_left_responsive nav ul li:hover > ul {
+    /*display: inherit; */
+}
+
+.column_left_responsive nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.column_left_responsive nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+
+
+
+
+
+/* for new/big desktop tu 1200 px tro len ....*/
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+}
+
+/* for medium/old desktop screen tu 1024 den 1200px */
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+}
+
+
+/* for medium view such as ipad  tu 768 den 1024 */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+
+/* for small view such as iphone, samsung : nho hon 768 */
+@media (min-width: 0px) and (max-width: 767px) {
+
+    /*IT Service Zone: left side responsive menu START*/
+    .column_left_responsive{display: block}
+    .column_left_responsive nav { margin: 0; }
+
+    .column_left_responsive .menu { display: block; }
+
+    .column_left_responsive .toggle {
+        display: block;
+        /*padding: 0 20px;*/
+        /*font-size: 20px;
+        line-height: 60px;*/
+        text-decoration: none;
+        border: none;
+    }
+
+    .column_left_responsive .toggle:hover { /*background-color: red;*/ }
+
+    [id^=drop]:checked + ul, [id^=drop]:checked + ul ul { display: block; }
+
+    .column_left_responsive nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        background: #FFF;
+    }
+    .column_left_responsive nav ul li label .heading_box2:after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        border-top: 8px solid #000;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        margin-top: 8px;
+    }
+    .column_left_responsive nav ul li label .heading_box2 {
+        border: 1px solid #A5A4A4;
+    }
+
+    .column_left_responsive nav ul ul .toggle,
+    .column_left_responsive nav ul ul a {
+        padding: 0 20px;
+    }
+
+    .column_left_responsive nav ul ul ul a { padding: 0 80px; }
+
+    .column_left_responsive nav a:hover,
+    .column_left_responsive nav ul ul ul a {
+        /*background-color: red;*/
+    }
+
+    .column_left_responsive nav ul li ul li .toggle,
+    .column_left_responsive nav ul ul a { /*background-color: red;*/ }
+
+    .column_left_responsive nav ul ul {
+        float: none;
+        position: static;
+    }
+
+    .column_left_responsive nav ul ul li:hover > ul,
+    .column_left_responsive nav ul li:hover > ul {  }
+
+    .column_left_responsive nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    .column_left_responsive nav ul ul ul li { position: static;
+
+    }
+
+    .column_left_responsive .cat_parent.fa, .column_left_responsive .cat_parent2.fa {
+        display: block;
+        font: 13px FontAwesome;
+        line-height: 2;
+        font-weight: normal;
+    }
+
+    .column_left_responsive .cat_parent.fa:hover, .column_left_responsive .cat_parent2.fa:hover {
+        color: #C91D23;
+    }
+
+    .column_left_responsive .cat_parent.fa-caret-down:before, .column_left_responsive .cat_parent.fa-caret-up:before {
+        float: right;
+        margin: 4px 10px 0 0;
+    }
+    .column_left_responsive .cat_parent2.fa-caret-down:before, .column_left_responsive .cat_parent2.fa-caret-up:before {
+        float: right;
+        margin: 6px 10px 0 0;
+    }
+
+    .column_left_responsive .cat_child, .column_left_responsive .cat_child2 {
+        /*  background: #fff; */
+    }
+    .column_left_responsive .cat_child  .fa-caret-down:before {
+        content: "" !important;
+    }
+    .manufacture, .manufacture_selected {
+        border-bottom: none;
+        padding: 0;
+        padding-left: 0;
+    }
+    .manufacture:hover {
+        background-color: transparent;
+    }
+
+    .catbox_level_3 a.catbox {
+        display: inline-block;
+        padding: 0 20px 0 0;
+    }
+    .catbox_level_3 .fa {
+        padding-left: 20px;
+    }
+
+	.catbox_level_1{text-align: center}
+
+    /*IT Service Zone: left side responsive menu EOF*/
+
+
+
+}

@@ -1,0 +1,250 @@
+/***** button control css
+Luu y: co 2 loai button
+1- button kieu submit (chua submit input, khong lien quan den form) 
+2- button link thuan tuy (khong chua submit input trong form)
+
+button form khac voi button link o cac diem sau:
+- height and width
+- text align
+- text font
+Reference: http://designshack.net/tutorialexamples/buttonanimations/index.html
+******/
+
+
+
+
+/************** henry note: dieu chinh button CHUA submit input form*****************/
+
+.submitButton .submitButton, .submitButton2 .submitButton2, .submitButton3 .submitButton3{
+  color: white;
+  border: 0px solid #eee;
+  height: 35px;									/* HEIGHT OF BUTTON */
+   min-width:125px;								/* chieu dai thoi thieu cua button */
+	margin: 0px 0px;
+  overflow: hidden;
+  display: inline-block;
+   padding-left: 10px;
+   padding-right: 10px;	
+
+  text-align: center;
+  text-align-last: center;
+
+  font-size: 14px; 			/* dac thu cua submit form : bat buoc phai khai bao font size o day*/
+
+  
+  /*Transition*/
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  
+  background:#326603; 
+  border-top: 0px solid #CB0C0C;
+
+  -webkit-appearance: none; /* to avoid weird look in iphone ipad */
+   border-radius: 5px;
+}
+
+
+.submitButton .submitButton:hover, .submitButton2 .submitButton2:hover, .submitButton3 .submitButton3:hover{
+  background: -webkit-linear-gradient(bottom, #D31D24, #A70F14 30%);
+  background: linear-gradient(to bottom, #D31D24, #A70F14 30%);
+
+}
+
+/* Small size : cho cac trang checkout, address book.... */
+.submitButton2 .submitButton2 {  height: 26px; font-size: 12px; }
+
+/* Big size: for product detail */
+.submitButton3 .submitButton3{
+  height: 35px;									/* HEIGHT OF BUTTON 1 */
+  font-size: 20px ;
+  line-height: 26px;							/* HEIGHT OF BUTTON 2 */
+  min-width:150px;
+}
+
+
+/************** henry note: dieu chinh button CHUA submit input form EOF *****************/
+
+
+
+
+/********************* henry note: dieu chinh button KHONG chua submit input form******************/
+
+.template-button-middle, .template-button-middle2 {
+  color: white;
+  border: 0px solid #eee;
+  height: 35px;									/* HEIGHT OF BUTTON */
+  line-height: 35px;							/* HEIGHT OF BUTTON */
+   min-width:120px;								/* chieu dai thoi thieu cua button */
+   padding-left: 10px;
+   padding-right: 10px;	
+  display: inline-block;						
+  text-align: center;
+  text-align-last: center;
+ 
+ margin-right: 10px;
+  /*Transition*/
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+  
+  background:#bd7d19; 
+  border-top: 0px solid #CB0C0C;
+  font-size: 14px;
+   border-radius: 5px;
+  margin-top:10px;
+}
+
+.template-button-middle:hover, .template-button-middle2:hover {
+  background: -webkit-linear-gradient(bottom, #D31D24, #A70F14 30%);
+  background: linear-gradient(to bottom, #D31D24, #A70F14 30%);
+}
+
+
+
+/* FOR SMALL button in checkout page, addresss book...*/
+.template-button-middle2 {
+ height: 25px;									/* HEIGHT OF BUTTON */
+ line-height: 25px;							/* HEIGHT OF BUTTON */
+ font-size: 12px;
+ min-width:0px;								/* chieu dai thoi thieu cua button */
+
+}
+
+
+/************** henry note: dieu chinh button KHONG chua submit input form -EOF *************/
+
+
+
+
+/************** Button more detail  *************/
+
+.moredetail {
+    text-transform: uppercase;
+    border: 1px solid #bdb8b8;
+    padding: 5px;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 180px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    transition: All 0.5s ease;   
+}
+
+.moredetail a {
+	color: white;
+}
+
+
+.moredetail:hover {
+
+background-color: rgba(202, 203, 205, 0.22);
+ /*  background: linear-gradient(to bottom, #6d7070, #2e2e2e 95%) repeat scroll 0 0 rgba(0, 0, 0, 0); */
+
+}
+
+/************** Button more detail EOF *************/
+
+
+
+
+.button2 {
+  border: 0px solid #eee;
+   min-width:70px;								/* chieu dai thoi thieu cua button */
+   padding: 15px;
+  overflow: hidden;
+
+  display: inline-block;						
+  text-align: center;
+  line-height: 23px;							/* HEIGHT OF BUTTON */
+
+  font-size: 20px;
+ /* text-transform: uppercase; */
+  
+  /*Transition*/
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+
+.button9 {
+  border: 0px solid #eee;
+   min-width:70px;								/* chieu dai thoi thieu cua button */
+   padding: 15px;
+  overflow: hidden;
+  display: inline-block;						
+  text-align: center;
+  line-height: 10px ;							/* HEIGHT OF BUTTON */
+	margin-bottom: 10px;
+  
+  /*Transition*/
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  -ms-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+ 
+}
+
+/* button 3 with shining effect */
+.button3 {
+text-align:center;
+line-height: 110%;
+padding: 2px 10px;
+margin-right: 10px;
+border: 1px solid #a09ea0;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-opera-border-radius:5px;
+-khtml-border-radius:5px;
+border-radius:5px;
+
+background: #FDA8DD -webkit-gradient(linear, left top, right top, from(#FDA8DD), to(#FDA8DD), color-stop(0.5, #fff)) 0 0 no-repeat;
+-webkit-background-size: 155px;  			/* henry: the size of the shine */
+-webkit-background-clip: block;				/* henry: value: text if shine on text, value:block if shine on whole block */
+-webkit-animation-name: shine;
+-webkit-animation-duration: 5s;				/* henry: the time of effect */
+-webkit-animation-iteration-count: infinite;    
+width:auto;
+display: inline-block;
+}
+
+.button3 a{color: black !important}
+
+@-webkit-keyframes shine
+{
+	0%
+		{
+    	background-position: top left -100px;
+		}
+	28%, 100%
+		{
+    	background-position: top right -200px;
+		}
+}
+
+/* button 3 with shining effect  EOF */
+
+.row_for_buttons {text-align-last:justify}  
+
+
+/* for small view such as iphone, samsung : nho hon 768 */
+@media (min-width: 0px) and (max-width: 768px) {
+.row_for_buttons {text-align-last:center; text-align:center}  
+.template-button-middle, .template-button-middle2 {margin-bottom:3%}
+.submitButton .submitButton, .submitButton2 .submitButton2, .submitButton3 .submitButton3 {margin-bottom:3%; margin-top:3%}
+.moredetail {font-size: 14px; padding: 5px 10px;}
+
+}

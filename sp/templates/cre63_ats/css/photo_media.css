@@ -1,0 +1,595 @@
+/******************** PHOTO ITEM start  ********************/
+
+.photo_block {
+border:0px solid red;
+padding-bottom:20px;
+text-align: justify;
+text-align-last: center;
+}
+
+.photo_block:last-child {
+border-bottom:0px solid #313030; 
+}
+
+.photo_container{display: inline-block; border:0px solid yellow; text-align:justify}
+
+.photo_item{
+display:inline-block;
+border: 0px solid yellow;
+box-sizing: border-box;
+margin-right:30px;				/* do not make the margin right too much because it will make justify does not work any more */
+margin-bottom: 20px;
+}
+
+
+
+.photo_photo, .photo_photo2 {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+
+
+    width: 350px;
+    height: 230px;
+    background: #d4d6d2;
+
+	border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #f5f0f0;
+    -webkit-box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+    -moz-box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+    box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+    
+}
+
+.photo_photo:hover, .photo_photo2:hover {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.photo_photo img, .photo_photo2 img {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.photo_photo img:hover, .photo_photo2 img:hover {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+transform: scale(1.1); 
+}
+
+.photo_text{
+text-align: center;
+}
+
+
+.photo_name{
+line-height: 120%;
+text-align: center;
+margin-top:5%;
+/* height: 20px; */			/*fix height of name for 3 lines of text, to avoid too long name ...*/
+overflow: hidden;
+text-align-last: center;
+}
+
+.photo_name img{
+width: 100%;
+height: auto;
+}
+
+
+.photo_name_cat{
+color: #767777;
+}
+
+
+.photo_name a{
+text-decoration: none;
+color: #36b3ed;
+font-size: 20px;
+}
+
+
+.photo_name a:hover{
+color: gray;
+}
+
+
+.photo_container{
+border:0px solid #dad0d0;
+margin-right: 5%;
+margin-bottom: 4%;
+}
+
+.photo_container:hover{
+/*
+-webkit-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.55);
+*/
+}
+
+
+
+.photo_img{
+border:0px solid red;
+}
+
+.photo_img img{
+width: auto;
+height: 19em; 
+}
+
+
+
+/*
+
+   Styles for animated modal
+   =========================
+
+*/
+
+/* Start state */
+.animated-modal {
+  max-width: 550px;
+  border-radius: 4px;
+  overflow: hidden;
+  transform: translateY(-50px);
+  transition: all .7s;
+}
+
+.animated-modal h2,
+.animated-modal p {
+  transform: translateY(-50px);
+  opacity: 0;
+  
+  transition-property: transform, opacity;
+  transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal h2 {
+  transition-delay: .1s;
+}
+
+.fancybox-slide--current .animated-modal p {
+  transition-delay: .3s;
+}
+
+
+/* style for before and after : start */
+.photo_container_ba {
+border:0px solid red; 
+width:24.5%; 
+display: inline-block;
+position: relative;
+}
+
+.photo_photo_ba  {
+width:100%; 
+max-height: 250px; 
+border:0px solid red; 
+overflow: hidden;  
+border-radius: 10px;
+border: 1px solid #f5f0f0;
+box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+}
+.photo_photo_ba img {width:100%; height: auto; 
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
+
+.photo_photo_ba img:hover  {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+transform: scale(1.1); 
+opacity: 0.7;
+}
+
+
+.photo_name_ba {
+	position: absolute; 
+	bottom: 11px;
+    left: 36%;
+    color: white;
+	font-family: Orbitron, 'Sans Serif';
+	font-size: 2vw;
+	text-shadow: 3px 3px 4px rgb(14, 14, 14);	
+    }
+
+
+/* style for before and after : EOF */
+
+
+/******************** PHOTO ITEM EOF  ********************/
+
+
+/******************* PHOTO CATEGORY - Start  *********************/
+.photo_container_cat{display: inline-block; border:0px solid yellow}
+.photo_item_cat{
+width: 350px;
+float: left;
+overflow: hidden;
+border: 0px solid yellow;
+box-sizing: border-box;
+margin-right:30px;				/* do not make the margin right too much because it will make justify does not work any more */
+margin-bottom: 30px;
+}
+
+
+.photo_photo_cat {
+	height: 222px;
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+	margin-bottom: 15px;
+
+
+
+	border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #f5f0f0;
+    -webkit-box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+    -moz-box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+    box-shadow: 10px 10px 18px -7px rgba(204,202,204,1);
+    
+}
+
+.photo_photo_cat:hover {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.photo_photo_cat img{
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.photo_photo_cat img:hover{
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+transform: scale(1.1); 
+}
+
+
+
+.photo_sub_cat_name{
+text-align-last: center;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 0px solid gray;
+    line-height: 100%;
+    font-size: 16px;
+    padding: 10px 0px;
+    font-family: 'Open Sans', arial;
+   
+    }	
+    
+.photo_sub_cat_name2{
+text-align-last: center;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 0px solid gray;
+     margin-bottom: 45px; 
+     margin-top: 40px; 
+    line-height: 100%;
+    border-radius: 5px;
+    font-size: 3vw;
+    padding: 10px 0px;
+    font-family: 'Open Sans', arial;
+     color: #807d7d; 
+ text-transform: uppercase; 
+   
+    }	
+    	
+/******************* PHOTO CATEGORY - EOF  *********************/
+
+
+
+
+/******************** MEDIA Item Start ************************/
+
+.video {
+   height:140px;												/* block image */
+   width: 200px;												/* block image */
+   float: left;
+   overflow:hidden;											/* block image */
+   background:url(nopic.jpg);
+   background-color: #EFEECB; 
+   border: 1px solid #726d6d;
+
+	-moz-border-radius:5px;									/* round corner (IE does not work)*/
+	-webkit-border-radius:5px;								/* round corner (IE does not work)*/
+	-opera-border-radius:5px;								/* round corner (IE does not work)*/
+	-khtml-border-radius:5px;								/* round corner (IE does not work)*/
+	border-radius:5px;										/* round corner (IE does not work)*/
+
+   opacity: 0.9;											/* fade effect */
+   transition: opacity .25s ease-in-out;					/* fade effect */
+   -moz-transition: opacity .25s ease-in-out;				/* fade effect */
+   -webkit-transition: opacity .25s ease-in-out;			/* fade effect */
+
+	margin-bottom: 10px;												/* outer space */
+
+}
+
+.video:hover {
+   border: 1px solid #b6121b;								/* border effect */
+   opacity: 0.99;											/* fade effect hover */
+
+	-moz-box-shadow: 0 0 3px rgba(33,102,85,0.9);			/* glowing effect (IE does not work */
+	-webkit-box-shadow: 0 0 3px rgba(33,102,85,0.9);		/* glowing effect (IE does not work */
+	box-shadow: 0 0 3px rgba(33,102,85,0.9);				/* glowing effect (IE does not work */
+}
+
+.video_name {
+line-height: 18px;
+padding-bottom: 20px;
+}
+
+.video_youtube{
+width: 560px;
+height: 315px;
+}
+
+
+.media_container{
+display: inline-block; 
+border:0px solid yellow;
+
+}
+
+.media_item{
+width: 320px;
+float: left;
+overflow: hidden;
+border: 0px solid yellow;
+box-sizing: border-box;
+margin-right:30px;				/* do not make the margin right too much because it will make justify does not work any more */
+margin-bottom: 30px;
+position:relative;
+}
+
+
+
+.media_photo {
+height: 186px;
+overflow: hidden;
+border: 5px solid #00a0e3;
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+/* generated from http://www.cssmatic.com/box-shadow */
+-webkit-box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.47);
+-moz-box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.47);
+box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.47);
+margin-bottom: 15px;
+}
+.iframe:hover{
+  text-decoration: none !important;
+}
+
+.media_photo:hover {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+border: 5px solid #8A8989;
+}
+
+
+.media_photo img {
+	width: 330px;
+	height: auto;
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.media_photo img:hover  {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+transform: scale(1.1); 
+}
+
+
+.media_name{
+line-height: 120%;
+text-align: center;
+ height: 40px; 			/*fix height of name for 2 lines of text, to avoid too long name ...*/
+overflow: hidden;
+text-align-last: center;
+}
+
+.media_name a{
+text-decoration: none;
+color: #36b3ed;
+font-size: 20px;
+}
+
+
+.media_name a:hover{
+color: gray;
+}
+
+
+
+/******************** MEDIA Item - EOF ************************/
+
+
+/******************** MEDIA CATEGORY - Start ************************/
+
+
+
+
+.media_container_cat{display: inline-block; border:0px solid yellow}
+.media_item_cat{
+width: 320px;
+float: left;
+overflow: hidden;
+border: 0px solid yellow;
+box-sizing: border-box;
+margin-right:30px;				/* do not make the margin right too much because it will make justify does not work any more */
+margin-bottom: 30px;
+}
+
+
+.media_photo_cat {
+height: 222px;
+overflow: hidden;
+border: 5px solid #00a0e3;
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+/* generated from http://www.cssmatic.com/box-shadow */
+-webkit-box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.47);
+-moz-box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.47);
+box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.47);
+margin-bottom: 15px;
+}
+
+.media_photo_cat:hover {
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+border: 5px solid #8A8989;
+}
+
+
+.media_photo_cat img{
+width: 320px;
+height: auto;
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.media_photo_cat img:hover{
+    -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+transform: scale(1.1); 
+}
+
+
+
+.media_sub_cat_name{
+text-align-last: center; 
+		color: #1683ad; 
+		padding: 5px; 
+		text-transform: uppercase; 
+		text-align:center; 
+		font-weight: bold;
+		border-bottom:0px solid gray;
+		margin-bottom:25px;
+		margin-top:0px;
+		line-height:100%;
+border-radius: 5px;		
+background: #00a0e3;
+color: #ffffff;
+font-size: 20px;
+padding: 10px 0px;
+}		
+
+/******************** MEDIA CATEGORY - EOF ************************/
+
+
+
+
+/************ RESPONSIVE Section start*****************/
+/* small desktop : nho hon 1366 */
+@media (min-width: 0px) and (max-width: 1366px) {
+.photo_container_ba {width:49%}
+.photo_photo_ba  {max-height: 300px }
+
+.photo_photo_ba img {width: 100%; }
+.photo_photo, .photo_photo2{    width: 210px;    height: 150px;}
+
+}
+
+
+
+
+
+
+/* for small view such as iphone, samsung : nho hon 768 */
+@media (min-width: 0px) and (max-width: 767px) {
+.photo_container {  display: inline-block;}    
+.photo_sub_cat_name{font-size:16px}
+.photo_block {text-align: center; }
+.photo_name {font-size:4vw; min-height: initial; text-align:center; text-align-last: center; width: initial}
+.photo_name_cat{font-size:4vw}
+
+.photo_sub_cat_name2 {font-size: 20px;    margin-top: 0; margin-bottom: 20px;}
+.photo_item {margin-right:0}
+
+.photo_name img {width:100%; height: auto}
+.photo_item_cat {width:100%; margin-right:0; margin-bottom: 0}
+.photo_photo_cat {height: auto;}
+.photo_photo, .photo_photo2 {width: 100%; height: auto;}
+}

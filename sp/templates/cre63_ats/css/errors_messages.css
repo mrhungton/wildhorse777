@@ -1,0 +1,44 @@
+.errorBox { 
+  font-weight: bold; 
+}
+.messageBox {
+}
+.stockWarning { 
+  color: #f00; 
+}
+SPAN.errorText, .messageStackError {
+  color: #005EA7;
+}
+.messageStackError, .messageStackWarning { 
+  background-color: #ffb3b5; 
+}
+.messageStackSuccess { 
+    background-color: #99ff00; 
+}
+tr.headerError {
+}
+td.headerError {
+  background: #DCDEB3; 
+  color: red;
+  text-align : center;
+}
+tr.headerInfo {
+}
+td.headerInfo {
+  background: #DCDEB3;
+  color: #000000;
+  text-align: center;
+}
+tr.headerError {
+}
+td.headerError {
+     background : #ff0000;
+     color : #ffffff;
+     font-weight : bold;
+}
+.infoBoxNotice {
+  background: #005EA7;
+}
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+}
