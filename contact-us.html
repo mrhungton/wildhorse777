@@ -368,45 +368,6 @@
                 </script>
                 <!-- close button EOF -->
 
-                <!-- expand and colapse button  by Amjad  - start -->
-
-                <script>
-                  $(document).ready(function (e) {
-                    $(
-                      '<div class="expand-collapse"><a href="javascript:void(0)" class="expand">Expand All</a>|<a href="javascript:void(0)" class="collapse">Collapse All</a></div>'
-                    ).insertBefore("#nav_ul > li:first-child");
-                    /*ITSZ: main menu collapse Start */
-                    $(".collapse")
-                      .unbind("click")
-                      .click(function (event) {
-                        $("#nav_ul > li").removeClass("fa-caret-up");
-                        $("#nav_ul > li").addClass("fa-caret-down");
-                        $("#nav_ul > li").removeClass("active");
-                        $("#nav_ul > li").find("div").slideUp("slow");
-                      });
-                    /*ITSZ: main menu collapse EOF*/
-
-                    /*ITSZ: main menu expand/ START*/
-                    $("#nav_ul > li > div").hide();
-                    $("#nav_ul > li").each(function () {
-                      if ($(this).find("ul").length) {
-                        $(this).addClass("fa fa-caret-down");
-                      }
-                    });
-
-                    $(".expand")
-                      .unbind("click")
-                      .click(function (event) {
-                        $("#nav_ul > li").removeClass("fa-caret-down");
-                        $("#nav_ul > li").addClass("fa-caret-up");
-                        $("#nav_ul > li").addClass("active");
-                        $("#nav_ul > li").find("div").slideDown("slow");
-                      });
-
-                    /*ITSZ: main menu expand  EOF*/
-                  });
-                </script>
-                <!-- expand and colapse button  by Amjad  -  EOF -->
                 <!--henry here-->
                 <ul id="nav_ul">
                   <li>
