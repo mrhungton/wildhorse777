@@ -1460,7 +1460,7 @@ box-sizing: border-box;
    color: #4d4d4d;
 	
 }
-.home_brand_container span: hover{
+.home_brand_container span:hover{
 	color: black;
    transition: opacity .25s ease-in-out;					/* fade effect */
    -moz-transition: opacity .25s ease-in-out;				/* fade effect */
