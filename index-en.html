@@ -174,100 +174,6 @@
         rel="stylesheet"
       />
 
-      <!-- ///////////////////// TOP 1 START  //////////////////////// -->
-      <div class="top1"></div>
-      <!--end of div top1 -->
-      <!-- ///////////////////// TOP 1 END /////////////////////-->
-
-      <!-- ///////////////////// TOP 2 START  //////////////////////// -->
-      <div class="top2">
-        <div class="wrapper">
-          <style>
-            .top2 a {
-              color: #cac7c7;
-              font-size: 12px;
-            }
-            .top2-1,
-            .top2-2,
-            .top2-3 {
-              float: left;
-              box-sizing: border-box;
-              border: 0px solid red;
-              color: #cac7c7;
-              font-size: 12px;
-            }
-
-            .top2-1 {
-              width: 40%;
-            }
-            .top2-2 {
-              width: 35%;
-            }
-            .top2-3 {
-              width: 25%;
-              text-align: right;
-            }
-
-            @media (min-width: 0px) and (max-width: 767px) {
-              .top2 {
-                display: none;
-              }
-            }
-          </style>
-
-          <div class="top2-1">
-            <a href="contact_us.php">
-              <span style="margin-right: 20px; font-weight: bold"
-                ><img src= ./images/flag_usa.png> 1-844-867-8397
-                (1-844-VORTEX7)</span
-              >
-            </a>
-            <a href="index-en.html" target="_blank">
-              <span><i class="fa fa-home" aria-hidden="true"></i> Home</span>
-            </a>
-          </div>
-
-          <div class="top2-2">
-            <div class="desktop-search">
-              <div class="">
-                <form method="get" action="advanced_search_result.php">
-                  <div style="display: inline-block">
-                    <input
-                      class="search_box_input"
-                      type="text"
-                      name="keywords"
-                      onblur="if(this.value==''){this.value='search item keyword'};"
-                      onfocus="if(this.value=='search item keyword'){this.value=''};"
-                      value="search item keyword"
-                    />
-                  </div>
-                  <div style="display: inline-block; float: right">
-                    <input
-                      class="search_box_submit"
-                      type="image"
-                      src="./images/icon_search.png"
-                      border="0"
-                      name="I1"
-                      style=""
-                    />
-                  </div>
-                </form>
-
-                <!--
-<div class="adv_search"><a href=advanced_search.php><span class="advanced_search">advanced search</span></a></div>
--->
-              </div>
-            </div>
-          </div>
-
-          <div class="top2-3"></div>
-          <!--end of div top2-3 -->
-          <div style="clear: both"></div>
-        </div>
-        <!--end of div wrapper -->
-      </div>
-      <!--end of div top2 -->
-      <!-- ///////////////////// TOP 2 END /////////////////////-->
       <!--ITSZ:Change the layout (top_style3.css) START-->
       <div class="top3">
         <div class="wrapper99">
@@ -385,35 +291,32 @@
                   </li>
 
                   <!-- static link
-		 <li><a href="https://www.vortexlifesciencesusa.com/sp/About-Us/p14/CD_15" class="parent"><span>About Us</span></a></li>
-
-
+		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
 -->
-
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/About-Us/p14/CD_15"
+                      href="about-us.html"
                       class="parent"
                       ><span class="m">About Us</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/Products/p24/CD_15"
+                      href="products.html"
                       class="parent"
                       ><span class="m">Products</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/Information/p94/CD_15"
+                      href="information.html"
                       class="parent"
                       ><span class="m">Information</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/Contact-Us/p37/CD_15"
+                      href="contact-us.html"
                       class="parent"
                       ><span class="m">Contact Us</span></a
                     >
@@ -482,82 +385,36 @@
                 </script>
                 <!-- close button EOF -->
 
-                <!-- expand and colapse button  by Amjad  - start -->
-
-                <script>
-                  $(document).ready(function (e) {
-                    $(
-                      '<div class="expand-collapse"><a href="javascript:void(0)" class="expand">Expand All</a>|<a href="javascript:void(0)" class="collapse">Collapse All</a></div>'
-                    ).insertBefore("#nav_ul > li:first-child");
-                    /*ITSZ: main menu collapse Start */
-                    $(".collapse")
-                      .unbind("click")
-                      .click(function (event) {
-                        $("#nav_ul > li").removeClass("fa-caret-up");
-                        $("#nav_ul > li").addClass("fa-caret-down");
-                        $("#nav_ul > li").removeClass("active");
-                        $("#nav_ul > li").find("div").slideUp("slow");
-                      });
-                    /*ITSZ: main menu collapse EOF*/
-
-                    /*ITSZ: main menu expand/ START*/
-                    $("#nav_ul > li > div").hide();
-                    $("#nav_ul > li").each(function () {
-                      if ($(this).find("ul").length) {
-                        $(this).addClass("fa fa-caret-down");
-                      }
-                    });
-
-                    $(".expand")
-                      .unbind("click")
-                      .click(function (event) {
-                        $("#nav_ul > li").removeClass("fa-caret-down");
-                        $("#nav_ul > li").addClass("fa-caret-up");
-                        $("#nav_ul > li").addClass("active");
-                        $("#nav_ul > li").find("div").slideDown("slow");
-                      });
-
-                    /*ITSZ: main menu expand  EOF*/
-                  });
-                </script>
-
-                <!-- expand and colapse button  by Amjad  -  EOF -->
                 <!--henry here-->
                 <ul id="nav_ul">
                   <li>
                     <a href="index-en.html" class="parent"><span>Home</span></a>
                   </li>
 
-                  <!-- static link
-		 <li><a href="https://www.vortexlifesciencesusa.com/sp/About-Us/p14/CD_15" class="parent"><span>About Us</span></a></li>
-
-
--->
-
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/About-Us/p14/CD_15"
+                      href="about-us.html"
                       class="parent"
                       ><span class="m">About Us</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/Products/p24/CD_15"
+                      href="products.html"
                       class="parent"
                       ><span class="m">Products</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/Information/p94/CD_15"
+                      href="information.html"
                       class="parent"
                       ><span class="m">Information</span></a
                     >
                   </li>
                   <li>
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/Contact-Us/p37/CD_15"
+                      href="contact-us.html"
                       class="parent"
                       ><span class="m">Contact Us</span></a
                     >
@@ -949,7 +806,7 @@ width: 120%;
                     </div>
 
                     <a
-                      href="https://www.vortexlifesciencesusa.com/sp/About-Us/p14/CD_15"
+                      href="about-us.html"
                       ><span class="moredetail">READ MORE</span></a
                     >
                   </div>
@@ -1198,14 +1055,14 @@ code file location:
 
         /* quote for request form */
         .submitbutton {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .form_field_wrap .field_group .column .input input,
         .form_field_wrap .field_group .input textarea {
-          border-color: #0d2b74 !important;
+          border-color: #2087c5 !important;
         }
         .success_message {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         /* quote for request form EOF */
 
@@ -1242,63 +1099,63 @@ code file location:
         h3,
         .loginheading,
         .inputRequirement {
-          color: #0d2b74 !important;
+          color: #2087c5 !important;
         }
 
         .cat_name2_current {
-          background: #0d2b74;
+          background: #2087c5;
         }
         ul.box li {
           color: white;
-          background: #0d2b74;
+          background: #2087c5;
         }
 
         #wowslider-container1 .button {
-          background: #0d2b74 !important;
-          border-color: #0d2b74 !important;
+          background: #2087c5 !important;
+          border-color: #2087c5 !important;
         }
         .row_style2 {
-          border-top-color: #0d2b74;
+          border-top-color: #2087c5;
         }
         .template-button-middle,
         .template-button-middle2,
         .mfs7 {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .submitButton .submitButton,
         .submitButton2 .submitButton2,
         .submitButton3 .submitButton3 {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .intro {
-          border-bottom-color: #0d2b74 !important;
+          border-bottom-color: #2087c5 !important;
         }
         .g-recaptcha {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .heading_box_arrow {
-          border-top-color: #0d2b74;
+          border-top-color: #2087c5;
         }
         #social_block ul li a {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .home_feature_line:before,
         .home_feature_line:after {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .fa-plus:before {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
-        /* photo_sub_cat_name { background:#0d2b74 !important} */
+        /* photo_sub_cat_name { background:#2087c5 !important} */
         .photo_photo,
         .photo_photo2 {
-          border-color: #0d2b74 !important;
+          border-color: #2087c5 !important;
         }
         .media_sub_cat_name {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         #toTop {
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
 
         /**** COLOR_SCHEME_1:  - EOF ****/
@@ -1319,24 +1176,24 @@ code file location:
         }
         .feature_box {
           border-color: #ef7716 !important;
-          background: #0d2b74 !important;
+          background: #2087c5 !important;
         }
         .g-recaptcha:hover {
           background: #ef7716 !important;
         }
         .template-button-middle:hover,
         .template-button-middle2:hover {
-          background: -moz-linear-gradient(top, #0d2b74, #0b51a0) !important;
+          background: -moz-linear-gradient(top, #2087c5, #0b51a0) !important;
           background: -webkit-gradient(
             linear,
             left top,
             left bottom,
-            from(#0d2b74),
+            from(#2087c5),
             to(#0b51a0)
           ) !important;
         }
 
-        /* .button9, .button2, .moredetail { color:white; background:#0d2b74; } 
+        /* .button9, .button2, .moredetail { color:white; background:#2087c5; } 
 .button9:hover, .button2:hover,.moredetail:hover  {background:#ef7716}
 */
 
@@ -1404,12 +1261,12 @@ code file location:
         /**** COLOR_SCHEME_7:  - EOF ****/
 
         .heading_box {
-          background: -moz-linear-gradient(top, #0d2b74, #0b51a0) !important;
+          background: -moz-linear-gradient(top, #2087c5, #0b51a0) !important;
           background: -webkit-gradient(
             linear,
             left top,
             left bottom,
-            from(#0d2b74),
+            from(#2087c5),
             to(#0b51a0)
           ) !important;
         }
@@ -1428,7 +1285,7 @@ code file location:
           background: none !important;
         }
         div#menu ul a {
-          color: #0d2b74;
+          color: #2087c5;
         }
         div#menu ul a:hover {
           color: #4e504f;
@@ -1445,7 +1302,7 @@ code file location:
           background: none;
         }
         div#menu ul ul a {
-          color: #0d2b74;
+          color: #2087c5;
         }
         div#menu ul ul a:hover {
           color: #4e504f;

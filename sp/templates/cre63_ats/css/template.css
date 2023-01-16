@@ -822,7 +822,7 @@ border-top-right-radius: 10px;
 
 .row_footer{
 border-top: 1px solid #d6d3d3;
-padding: 5px; 
+padding-top: 20px;
 background:#ffffff; 
 text-align:center;
 line-height: 120%;
@@ -2621,7 +2621,7 @@ a[href^=tel] {
 }/* for super small size : iphone 5-6*/
 @media (min-width: 0px) and (max-width: 420px) {
     .btn_continue_shopping, .btn_update_shopping_cart{float:left;}
-	.home_feature, .pageHeading {font-size: 26px;	margin-bottom: 0px;	margin-top: 0px;	}
+	.home_feature, .pageHeading {font-size: 26px;	margin-bottom: 0px;	margin-top: 20px;	}
 }
 @media (min-width: 0px) and (max-width: 380px) {
     span.active {
