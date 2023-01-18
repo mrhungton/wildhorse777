@@ -543,284 +543,264 @@
         <!-- RCI [EOM] -global-top : ./sp/includes/runtime/global/CDS_CDpathSession_global_top.php -->
         <!-- RCI [BOM] -global-top : ./sp/includes/runtime/global/CDS_header_banner_global_top.php -->
         <!-- RCI [EOM] -global-top : ./sp/includes/runtime/global/CDS_header_banner_global_top.php -->
-        <div>
-          <!-- D Main_page //-->
+        <div><!-- D Main_page //-->
 
           <div id="cbp-so-scroller">
-            <!--<img src=./images/home_r1.jpg><br>-->
-            <!--<a href=About-Us/p14/CD_15><img src=./images/home_r2.jpg></a>-->
+
             <style>
-              .row_style5_3 {
-                padding: 2% 0px;
-                overflow: hidden;
-                position: relative;
-                -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
+          .row_style5_3 {
+            padding: 2% 0px;
+            overflow: hidden;
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+                    transform-style: preserve-3d;
+          
+          
+          }
+          
+          
+          .row_style5_3:before {
+            -webkit-animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+                    animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)),
+                        url(./images/bg_hand.jpg) no-repeat bottom;
+            background-size: cover;
+            content: "";
+            opacity: 0;
+            position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+            z-index: -1;
+          }
+          
+          
+          /* Animations */
+          
+          @-webkit-keyframes fade-slide-down {
+            0% {
+              opacity: 0;
+              -webkit-transform: translateY(-4rem);
+                      transform: translateY(-4rem);
+            }
+            100% {
+              opacity: 1;
+              -webkit-transform: none;
+                      transform: none;
+            }
+          }
+          
+          @keyframes fade-slide-down {
+            0% {
+              opacity: 0;
+              -webkit-transform: translateY(-4rem);
+                      transform: translateY(-4rem);
+            }
+            100% {
+              opacity: 1;
+              -webkit-transform: none;
+                      transform: none;
+            }
+          }
+          
+          
+          
+          .col1, .col2{float: left;box-sizing: border-box;}
+          
+          
+          .col1 {padding-right: 0px ;width: 50%; }
+          .col1 img {max-width:100%}
+          
+          
+          
+          .col2 {width: 50%; }
+          
+          
+          
+          .col2 .h_h {color: #a0481c;
+              text-transform: uppercase;
+              font-size: 40px;
+              padding-top: 22px;
+              padding-bottom: 18px;
+              line-height: 100%;
               }
-
-              .row_style5_3:before {
-                -webkit-animation: fade-slide-down 2s 0.5s
-                  cubic-bezier(0, 0.5, 0, 1) forwards;
-                animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1)
-                  forwards;
-                background: linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0),
-                    rgba(0, 0, 0, 0)
-                  ),
-                  url(./images/bg_hand.jpg) no-repeat bottom;
-                background-size: cover;
-                content: "";
-                opacity: 0;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                z-index: -1;
+          .col2 .h_t {color: white;
+              font-family: Georgia;
+              font-size: 23px;
+              margin-bottom: 60%;
+              line-height: 150%;
+              text-align:justify;
               }
+          
+          .h_t img.for_mobile {display: none}
+          
+          
+          @media (min-width: 0px) and (max-width: 767px) {
+          
+          .row_style5_3 {padding: 0}
+          .row_style5_3:before {background: #2f5b68}
+          .col1, .col2{ width:100%; padding-right:0px}
+          .col1 {display:none}
 
-              /* Animations */
-
-              @-webkit-keyframes fade-slide-down {
-                0% {
-                  opacity: 0;
-                  -webkit-transform: translateY(-4rem);
-                  transform: translateY(-4rem);
-                }
-                100% {
-                  opacity: 1;
-                  -webkit-transform: none;
-                  transform: none;
-                }
-              }
-
-              @keyframes fade-slide-down {
-                0% {
-                  opacity: 0;
-                  -webkit-transform: translateY(-4rem);
-                  transform: translateY(-4rem);
-                }
-                100% {
-                  opacity: 1;
-                  -webkit-transform: none;
-                  transform: none;
-                }
-              }
-
-              .col1,
-              .col2 {
-                float: left;
-                box-sizing: border-box;
-              }
-
-              .col1 {
-                padding-right: 0px;
-                width: 50%;
-              }
-              .col1 img {
-                max-width: 100%;
-              }
-
-              .col2 {
-                width: 50%;
-              }
-
-              .col2 .h_h {
-                color: #a0481c;
-                text-transform: uppercase;
-                font-size: 40px;
-                padding-top: 22px;
-                padding-bottom: 18px;
-                line-height: 100%;
-              }
-              .col2 .h_t {
-                color: white;
-                /* font-family: Georgia; */
-                font-size: 23px;
-                margin-bottom: 60%;
-                line-height: 150%;
-                text-align: justify;
-              }
-
-              .h_t img.for_mobile {
-                display: none;
-              }
-
-              @media (min-width: 0px) and (max-width: 767px) {
-                .row_style5_3 {
-                  padding: 0;
-                }
-                .row_style5_3:before {
-                  background: #2f5b68;
-                }
-                .col1,
-                .col2 {
-                  width: 100%;
-                  padding-right: 0px;
-                }
-                .col1 {
-                  display: none;
-                }
-
-                /*
-.col2 .h_t:before {
--webkit-animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-			 animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-
-
-display: inline-block;
- content: "";
- background: url(./images/bg_hand.jpg) no-repeat 0 0;
- background-size: cover;    
- height: 200px;
-width: 120%;
- margin-bottom: 5%;
- margin-left: -10%;}
-*/
-
-                .h_t img.for_mobile {
-                  display: block;
-                  max-width: 111%;
-                  margin-left: -5%;
-                  margin-bottom: 10%;
-                }
-
-                .col2 .h_h {
-                  display: none;
-                }
-                .col2 .h_t {
-                  font-size: 18px;
-                  margin: 0;
-                  padding-bottom: 10%;
-                  line-height: 200%;
-                  text-align: center;
-                }
-              }
-            </style>
+          .h_t img.for_mobile {display: block;
+              max-width: 111%;
+              margin-left: -5%;
+              margin-bottom: 10%;}
+          
+          
+          .col2 .h_h {display: none}
+          .col2 .h_t {   font-size: 18px;  margin:0; padding-bottom:10%; line-height:200%; text-align:center   }
+          }
+          </style>
             <div class="row_style5_3">
+
               <div class="wrapper">
+
+
                 <div class="col1">
-                  <div class="text">&nbsp;</div>
+
+
+                  <div class="text">&nbsp;
+
+                  </div>
+
                 </div>
                 <!--end of col1-->
 
                 <div class="col2">
+
                   <div class="text">
                     <div class="h_h"></div>
                     <div class="h_t">
-                      <img class=for_mobile src=./images/bg_hand.jpg> Our
-                      endeavor is a quest to know... Our research team is
-                      dedicated to finding the most Potent, Safe, and NATURAL
-                      solutions for health.
+                      <img class="for_mobile" src="./images/bg_hand.jpg">
+                      With our premiere product, PICO2 Air Disinfectant
+                      Solution, we have harnessed the wisdom from nearly 3.5
+                      billion years of life that can change the paradigms by
+                      which the world manages pathogens, particularly, airborne.
+                      PICO2 is a laboratory-tested, 99.99% effective,
+                      all-natural disinfectant agent that for the first time
+                      ever, is completely chemical-free and toxin-free. Our
+                      solution will NOT in any way negatively impact the health
+                      and safety of people or planet. And, we believe the
+                      observed benefits may only be the tip of the iceberg.
                     </div>
                     <!--		<div class="moredetail">Learn More</div>-->
+
                   </div>
+
                 </div>
                 <!--end of col2-->
-                <div style="clear: both"></div>
-              </div>
-              <!--end of div wrapper -->
-            </div>
-            <!--end of div row_style5_3-->
+                <div style="clear:both"></div>
+              </div><!--end of div wrapper -->
+            </div><!--end of div row_style5_3-->
+
 
             <style>
-              .mfs54 {
-                background-image: url("./images/bg_wheat.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center top;
-                padding: 5% 0;
+          .mfs54 {
+          background-image:url('./images/bg_wheat.jpg'); 
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center top; 
+          padding: 5% 0;
+          }
+          
+          
+          .mfs54 .content {
+              width:75%; 
+              color: white;
+              text-align:center;
+              margin: auto; 
+              font-size: 1.5vw;
+              line-height: 200%;
+              
+          }
+          
+          .mfs54 .content a:hover{
+            text-decoration: none;
+          }
+          
+          .mfs54 .h_h {
+          font-size: 2vw;
+              border-top: 1px solid #c5bfbf;
+              border-bottom: 1px solid #c5bfbf;
+              padding: 20px 0;
+              width: 79%;
+              margin: auto;
+              margin-bottom: 5%;
               }
-
-              .mfs54 .content {
-                width: 75%;
-                color: white;
-                text-align: center;
-                margin: auto;
-                font-size: 1.5vw;
-                line-height: 200%;
-              }
-
-              .mfs54 .content a:hover {
-                text-decoration: none;
-              }
-
-              .mfs54 .h_h {
-                font-size: 2vw;
-                border-top: 1px solid #c5bfbf;
-                border-bottom: 1px solid #c5bfbf;
-                padding: 20px 0;
-                width: 79%;
-                margin: auto;
-                margin-bottom: 5%;
-              }
-
-              /* for small view such as iphone, samsung : less than 768 */
-              @media (min-width: 0px) and (max-width: 767px) {
-                .mfs54 .content {
-                  width: 100%;
-                  font-size: 18px;
-                }
-                .mfs54 .h_h {
-                  font-size: 26px;
-                }
-              }
-            </style>
+          
+          
+          
+          
+          /* for small view such as iphone, samsung : less than 768 */
+          @media (min-width: 0px) and (max-width: 767px) {
+            .mfs54 .content{width:100%; font-size: 18px;}
+            .mfs54 .h_h {font-size: 26px;}
+          
+          }
+          
+          </style>
             <div class="mfs54 fade-in">
-              <div class="wrapper cbp-so-section">
+              <div class="wrapper cbp-so-section cbp-so-init cbp-so-animate">
                 <!--row 1 - start -->
                 <div class="content" id="cbp-so-scroller">
                   <div class="cbp-so-side cbp-so-side-left">
                     <div class="home_feature" style=""></div>
 
-                    <div class="h_h">
-                      "Let Nature's engineering be your solution to health"
-                    </div>
-                    <div class="h_t">
-                      <br />
+                    <div class="h_h">TOGETHER, We're making THE WORLD A SAFER
+                      PLACE </div>
+                    <div class="h_t"><br>
                       We are a visionary life science company. Our aim is to
                       develop innovations that can meaningfully impact global
                       challenges for humanity.&nbsp; We dedicate ourselves in
                       work that will facilitate health and wellness, elevate the
-                      human condition, restore and sustain our planet.
-                    </div>
+                      human condition, restore and sustain our planet.</div>
+
 
                     <a
-                      href="about-us.html"><span class="moredetail">READ MORE</span></a>
+                      href="about-us.html"><span
+                        class="moredetail">READ MORE</span></a>
+
+
+
                   </div>
-                </div>
-                <!--end of div flex-container2 -->
+
+
+                </div><!--end of div flex-container2 -->
                 <!--row 1 - end -->
+
               </div>
+
+
             </div>
-          </div>
-          <!--end of cbp-so-scroller -->
+
+          </div><!--end of cbp-so-scroller -->
+
+
+
 
           <!--ITSZ: Get same page position after submit form  part 1/3 START
-code file location:
-- include/main.htm (part 1/3)
-- ./sp/templates/default/mainpage_modules/manufacturer.php (part 2/3)
-- cms/box_text_box2.php (part 3/3)
--->
+          code file location:
+          - include/main.htm (part 1/3)
+          - templates/default/mainpage_modules/manufacturer.php (part 2/3)
+          - cms/box_text_box2.php (part 3/3)
+          -->
           <script>
-            function getPosition() {
-              var bodyTop = $("body").scrollTop();
-              $("input[name=position]").val(bodyTop);
+            function getPosition(){
+              var bodyTop = $('body').scrollTop();
+              $('input[name=position]').val(bodyTop);
             }
-            $(document).ready(function () {
-              $(".default").change(function () {
-                if ($(this).is(":checked")) {
-                  $(this)
-                    .next()
-                    .css({
-                      display: "inline-block",
-                      "background-color": "lightgray",
-                    });
-                  $(this).next().next().css("display", "none");
-                } else {
-                  $(this).next().css("display", "none");
-                  $(this).next().next().css("display", "inline-block");
+            $(document).ready(function() {
+              $('.default').change(function() {
+                if($(this).is(":checked")) {
+                  $(this).next().css({'display':'inline-block','background-color':'lightgray'});
+                  $(this).next().next().css('display','none');
+                }
+                else
+                {
+                  $(this).next().css('display','none');
+                  $(this).next().next().css('display','inline-block');
                 }
               });
             });
