@@ -145,7 +145,7 @@ bottom:0px;
 right:0px;
 width:90px;									/* henry position cua box save */
 height:55px;
-background:url('../../../../images/product_list-savings-bg.gif') no-repeat; 
+/* background:url('../../../../images/product_list-savings-bg.gif') no-repeat;  */
 }
 .product_list .product .save b {
 position:absolute;

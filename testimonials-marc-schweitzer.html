@@ -12,15 +12,15 @@
     <!-- <base href="https://www.vortexlifesciencesusa.com/sp/" /> -->
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>
-      Products - Wild Horse 777
+      Marc Schweitzer - Wild Horse 777
     </title>
     <meta
       name="Description"
-      content="Products - Wild Horse 777 "
+      content="Marc Schweitzer - Wild Horse 777 "
       />
     <meta
       name="Keywords"
-      content="Products - Wild Horse 777"
+      content="Marc Schweitzer - Wild Horse 777"
       />
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="30 days" />
@@ -299,7 +299,7 @@
                   <li>
                     <a
                       href="products.html"
-                      class="parent active"><span class="m">Products</span></a>
+                      class="parent"><span class="m">Products</span></a>
                   </li>
                   <li>
                     <a
@@ -309,7 +309,7 @@
                   <li>
                     <a
                       href="testimonials-jerry-tyler.html"
-                      class="parent"><span class="m">Testimonials</span></a>
+                      class="parent active"><span class="m">Testimonials</span></a>
                   </li>
                   <li>
                     <a
@@ -480,162 +480,143 @@
         });
       </script>
       <style>
-        .column_center {
-          width: 100%;
-          margin: auto;
-          float: initial;
+        .column_left 	{width: 22%;  float:left; margin-right: 3%;}
+        @media (min-width: 0px) and (max-width: 767px) 
+        {
+          .column_left {
+              display: block;
+              width: 70%;
+              text-align: center;
+              margin-bottom: 15px;
+          }
+          .heading_box {
+            margin-left: 0px;
+          }
         }
-      </style>
+        .column_center  {width: 75%;  float: left}
+        .column_right	{width: 0%;  float: right;	 display: none}
+        .pages_title_link .active {
+          background-color: #d7f2f7;
+          color: #1f1f1f;
+        }
+        </style>
       <div class="wrapper"> <!--div wrapper start-->
         <div class="row">
-          <!--start column center -->
+          <!-- left column -->
+          <div class="column_left">
+            <!-- IT Service Zone: debug error fix: getting $column_left empty value so added condition START-->
+            <div class="heading_box">Testimonials<span
+                class="heading_box_arrow"></span></div>
+            <div>
+              <a class="pages_title_link"
+                href="testimonials-jerry-tyler.html">
+                <div class="pages_title">Jerry Tyler </div>
+              </a>
+
+              <a class="pages_title_link"
+                href="testimonials-trung-bui.html">
+                <div class="pages_title">Trung Bui </div>
+              </a>
+
+              <a class="pages_title_link"
+                href="testimonials-marc-schweitzer.html">
+                <div class="pages_title active">Marc Schweitzer </div>
+              </a>
+            </div>
+          </div>
           <div class="column_center">
-            <div class="pageHeading">Products</div>
-            <div class="cds_pages_body" id="cbp-so-scroller">
-              <h2 style="text-align: center;">
-                <img alt="" src="./images/s1.jpg">
-              </h2>
-
-              <div style="text-align: center;"><img alt="" src="./images/s5.jpg"><br>
-              <img alt="" src="./images/s9.jpg"><br>
-              <img alt="" src="./images/s10.jpg"><br>
-              <img alt="" src="./images/s11.jpg"></div></div>
-            <div style="margin-top: 60px;"
+            <div class="pageHeading">Marc Schweitzer</div>
+            <div
               class="cds_pages_body" id="cbp-so-scroller">
-              <div
-                style="text-align: center;"><img
-                  src="./images/product_nasal_and_oral_spray.jpg"></div>
+              <h3 class="powerpoint">Video presentation</h3>
 
-              <h2>Oral Spray &nbsp;&amp;&nbsp;Nasal Spray Products</h2>
+              <div style="text-align: center;">
+                <iframe allow="accelerometer; autoplay; encrypted-media;
+                  gyroscope; picture-in-picture" allowfullscreen=""
+                  frameborder="0" height="315"
+                  src="https://www.youtube.com/embed/3ijSrOfjeoA?rel=0&amp;autoplay=1&amp;cc_load_policy=1"
+                  width="560"></iframe>
+              </div>
 
-              <p>Our user-friendly nasal and oral sprays demonstrate r<strong>eliable
-                  effectiveness </strong>not only <strong>as a therapeutic agent
-                  for the COVID-19 infection</strong> but also offers a <strong>significant</strong>
-                 <strong>measure of preventative protection</strong>.&nbsp;
-                Most importantly, we are confident our formulation will cover
-                ALL current variant strains of the SARS-COV-2 virus.</p>
+              <h3 class="powerpoint">Slideshow presentation</h3>
 
-              <h2>Main benefits:</h2>
+              <div class="powerpoint">
+                <iframe allowfullscreen="true" frameborder="0" height="749"
+                  mozallowfullscreen="true" src="
+                  https://docs.google.com/presentation/d/1IpLtVHKqW6qh9saX7KGpJEqTSBee6kdvTrJdCQHWf3s/embed?start=false&amp;loop=false&amp;delayms=3000"
+                  webkitallowfullscreen="true" width="960"></iframe>
+              </div>
+              <style>
+.tagcloud {
+   /* width: 100%; */
+    color: gray;
+    padding: 10px;
+    border: 1px solid #e0dede;
+    text-align:center;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+.tagcloud a {
 
-              <ul>
-                <li>100 percent natural, non-toxic and contains no
-                  preservatives.</li>
-                <li>No reported side effects.</li>
-                <li>We observed zero progression to
-                  clinically severe stages requiring mechanical ventilation
-                  support in confirmed COVID-19 positive users.</li>
-                <li>Conversion from positive to negative COVID status range
-                  between 6-14 days following the initiation of use in most cases.</li>
-              </ul>
-              <br>
-              &nbsp;
+color: gray;
+font-size: 16px;
+}
+ 
+#tagcloud a:link, #tagcloud a:visited {
+    text-decoration:none;
+}
+ 
+#tagcloud a:hover, #tagcloud a:active {
+    text-decoration: underline;
+    color: #000;
+}
+ 
+#tagcloud span {
+    padding: 4px;
+}
+ 
+.smallest {
+    font-size: 10px;
+}
+ 
+.small {
+    font-size: 16px;
+}
+ 
+.medium {
+    font-size:18px;
+}
+ 
+.large {
+    font-size:20px;
+}
+ 
+.largest {
+    font-size:24px;
+}
 
-              <div class="home_feature">Tomorrow's science for Today</div>
-
-              <div style="border:0px solid red; text-align:center">
-                <div class="photo_container" style="position:relative;"> <div
-                    class="photo_img"><a data-fancybox="gallery"
-                      class="photo_name" data-caption=""
-                      href="./images/DSC_0121_julie.jpeg">
-                      <img border="0" width="250" height="166.78571428571"
-                        src="./images/DSC_0121_julie.jpeg"
-                        alt=""></a></div><div class="photo_name"></div><div
-                    style="clear:both"></div></div> <!--end of div photo_container --><div
-                  class="photo_container" style="position:relative;"> <div
-                    class="photo_img"><a data-fancybox="gallery"
-                      class="photo_name" data-caption=""
-                      href="./images/DSC_0112_bs_David.jpeg">
-                      <img border="0" width="250" height="166.78571428571"
-                        src="./images/DSC_0112_bs_David.jpeg"
-                        alt=""></a></div><div class="photo_name"></div><div
-                    style="clear:both"></div></div> <!--end of div photo_container -->
-                <div style="clear:both"></div>
-
-              </div><style>
-      .tagcloud {
-         /* width: 100%; */
-          color: gray;
-          padding: 10px;
-          border: 1px solid #e0dede;
-          text-align:center;
-          border-radius: 5px;
-      }
-      .tagcloud a {
-      
-      color: gray;
-      font-size: 16px;
-      }
-       
-      #tagcloud a:link, #tagcloud a:visited {
-          text-decoration:none;
-      }
-       
-      #tagcloud a:hover, #tagcloud a:active {
-          text-decoration: underline;
-          color: #000;
-      }
-       
-      #tagcloud span {
-          padding: 4px;
-      }
-       
-      .smallest {
-          font-size: 10px;
-      }
-       
-      .small {
-          font-size: 16px;
-      }
-       
-      .medium {
-          font-size:18px;
-      }
-       
-      .large {
-          font-size:20px;
-      }
-       
-      .largest {
-          font-size:24px;
-      }
-      
-      </style>
-              <div
-                class="tagcloud">
+</style>
+              <div class="tagcloud">
 
                 <a
                   href="#"
-                  class="largest">Oral Spray</a>,
-                <a
+                  class="largest">Oral Spray</a>, <a
                   href="#"
-                  class="largest">Covid-19</a>,
-                <a
+                  class="largest">Covid-19</a>, <a
                   href="#"
                   class="largest">Nasal Spray</a>
               </div>
-              <div class="tagcloud" style="display:none">pages_meta_keywords:
-                Oral Spray, Nasal Spray, Covid-19,</div></div><!-- cds_pages.tpl.php-eof -->
-            <!-- body_eof //-->
-            <!-- footer //-->
-            <!--webbot bot="PurpleText" PREVIEW="end content here" -->
-
+            </div>
 
           </div> <!--end of center column -->
 
-          <!--right column -->
-          <div class="column_right">
-            <!-- IT Service Zone: debug error fix: getting $column_right empty value so added condition START-->
-            <!-- IT Service Zone: debug error fix: getting $column_right empty value so added condition EOF-->
-          </div><!--end of right column-->
-
           <div style="clear:both"></div>
-
-
-          <div style="height: 30px;"></div> <!--buffer area to make space bt footer and body content -->
         </div> <!--end of row -->
 
 
       </div>
+
+
       <style>
         .footer_address {
           font-size: 20px;
@@ -706,19 +687,20 @@
               <!--end of col1-->
 
               <div class="col2">
-                <div class="text">E-mail: 
+                <div class="text">E-mail:
                   <a href="mailto:info@wildhorse777usa.com">info@wildhorse777usa.com</a>
                 </div>
               </div>
               <!--end of col2-->
               <div class="col3">
-                <div class="text">Phone: 
-                  <a href="tel:800-880-1993">800-880-1993</a>  
+                <div class="text">Phone:
+                  <a href="tel:800-880-1993">800-880-1993</a>
                 </div>
               </div>
               <!--end of col3-->
 
               <div style="clear: both"></div>
+              <div style="height: 30px;"></div>
             </div>
 
             <!--

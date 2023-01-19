@@ -121,11 +121,11 @@
           // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
           if ($(window).scrollTop() > 0) {
             // If it's more than or equal to 0, show the toTop button.
-            console.log("is more");
+            // console.log("is more");
             $("#toTop").fadeIn("slow");
           } else {
             // If it's less than 0 (at the top), hide the toTop button.
-            console.log("is less");
+            // console.log("is less");
             $("#toTop").fadeOut("slow");
           }
         });
@@ -178,17 +178,17 @@
         rel="stylesheet"
         />
 
-     <!--ITSZ:Change the layout (top_style3.css) START-->
-     <div class="top3">
-      <div class="wrapper99">
-        <!--<a href=><div class=tab_phone>Registration NOW</div></a>-->
+      <!--ITSZ:Change the layout (top_style3.css) START-->
+      <div class="top3">
+        <div class="wrapper99">
+          <!--<a href=><div class=tab_phone>Registration NOW</div></a>-->
 
-        <div
-          class="flex-container"
-          style="position: relative; padding: 0px 0px; min-height: 40px">
-          <div class="flex-item mobile-logo">
-            <!-- IT Service Zone: Add mobile-logo class for logo responsive-->
-            <style>
+          <div
+            class="flex-container"
+            style="position: relative; padding: 0px 0px; min-height: 40px">
+            <div class="flex-item mobile-logo">
+              <!-- IT Service Zone: Add mobile-logo class for logo responsive-->
+              <style>
               /* logo for Desktop*/
               #logo {
                 background: url(./images/logo_bg.png) no-repeat;
@@ -272,46 +272,51 @@
               }
               /*** RESPONSIVE frame work EOF  ***/
             </style>
-            <a href="index.html"><div id="logo"></div></a>
-          </div>
+              <a href="index.html"><div id="logo"></div></a>
+            </div>
 
-          <div class="flex-item">
-            <link
-              type="text/css"
-              href="./cms/menu_black/menu_style3.css"
-              rel="stylesheet"
-              />
-            <script
-              type="text/javascript"
-              src="./cms/menu_black/menu.js"></script>
-            <!-- //////////////// start for regular menu ////////////-->
-            <div id="menu">
-              <ul class="menu">
-                <li>
-                  <a href="index.html" class="parent en_lang"><span>Home</span></a>
-                  <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
-                </li>
-                <li>
-                  <a
-                    href="about-us.html"
-                    class="parent"><span class="m">About Us</span></a>
-                </li>
-                <li>
-                  <a
-                    href="products.html"
-                    class="parent"><span class="m">Products</span></a>
-                </li>
-                <li>
-                  <a
-                    href="information.html"
-                    class="parent"><span class="m">Information</span></a>
-                </li>
-                <li>
-                  <a
-                    href="contact-us.html"
-                    class="parent"><span class="m">Contact Us</span></a>
-                </li>
-                <!-- <li style="margin-top: 5px;">
+            <div class="flex-item">
+              <link
+                type="text/css"
+                href="./cms/menu_black/menu_style3.css"
+                rel="stylesheet"
+                />
+              <script
+                type="text/javascript"
+                src="./cms/menu_black/menu.js"></script>
+              <!-- //////////////// start for regular menu ////////////-->
+              <div id="menu">
+                <ul class="menu">
+                  <li>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="about-us.html"
+                      class="parent"><span class="m">About Us</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="products.html"
+                      class="parent"><span class="m">Products</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="information.html"
+                      class="parent"><span class="m">Information</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="testimonials-jerry-tyler.html"
+                      class="parent"><span class="m">Testimonials</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="contact-us.html"
+                      class="parent active"><span class="m">Contact Us</span></a>
+                  </li>
+                  <!-- <li style="margin-top: 5px;">
                   <span id="lang-switch">
                     <img
                       src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
@@ -321,53 +326,53 @@
                       class="vi">
                   </span>
                 </li> -->
-              </ul>
-            </div>
-            <!--end for regular menu -->
-            <!-- //////////////// start for responsive menu ////////////-->
-            <!--ITSZ: logo show on top ONLY when scroll START-->
-            <div class="mobile-logo-scroll">
-              <div class="logo-content">
-                <div>
+                </ul>
+              </div>
+              <!--end for regular menu -->
+              <!-- //////////////// start for responsive menu ////////////-->
+              <!--ITSZ: logo show on top ONLY when scroll START-->
+              <div class="mobile-logo-scroll">
+                <div class="logo-content">
                   <div>
-                    <div style="padding: 0 0.12rem; text-align: center">
-                      <div style="margin-top: 0; background: transparent">
-                        <div id="logo-scroll">
-                          <a href="index.html">Vortex Life Science</a>
+                    <div>
+                      <div style="padding: 0 0.12rem; text-align: center">
+                        <div style="margin-top: 0; background: transparent">
+                          <div id="logo-scroll">
+                            <a href="index.html">Vortex Life Science</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--ITSZ: logo on top when scroll EOF-->
-            <!-- henry hide, no need to show favicon 
+              <!--ITSZ: logo on top when scroll EOF-->
+              <!-- henry hide, no need to show favicon 
 <div class="mobile-logo-top"><a href="index.html"> <img src="./images/favicon.ico"></a></div>
 -->
-            <label class="minimal-menu-button" for="mobile-nav"></label>
-            <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - Start-->
-            <div class="fixed_in_mobile" style=""></div>
-            <!--end of div class=fixed_in_mobile -->
-            <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - EOF-->
-            <input
-              class="minimal-menu-button"
-              type="checkbox"
-              id="mobile-nav"
-              name="mobile-nav"
-              />
-            <div class="minimal-menu clr-blue">
-              <!-- close button - start -->
-              <span
-                id="close_menu"
-                style="
-                position: absolute;
-                right: 0;
-                top: 3px;
-                z-index: 9999;
-                padding: 10px;
-                "><i style="" class="fa fa-times" aria-hidden="true">Close</i></span>
-              <script>
+              <label class="minimal-menu-button" for="mobile-nav"></label>
+              <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - Start-->
+              <div class="fixed_in_mobile" style=""></div>
+              <!--end of div class=fixed_in_mobile -->
+              <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - EOF-->
+              <input
+                class="minimal-menu-button"
+                type="checkbox"
+                id="mobile-nav"
+                name="mobile-nav"
+                />
+              <div class="minimal-menu clr-blue">
+                <!-- close button - start -->
+                <span
+                  id="close_menu"
+                  style="
+                  position: absolute;
+                  right: 0;
+                  top: 3px;
+                  z-index: 9999;
+                  padding: 10px;
+                  "><i style="" class="fa fa-times" aria-hidden="true">Close</i></span>
+                <script>
                 /*ITSZ: menu close button functionality START*/
                 jQuery(document).ready(function ($) {
                   $("#close_menu").click(function () {
@@ -376,36 +381,41 @@
                 });
                 /*ITSZ: menu close button functionality EOF*/
               </script>
-              <!-- close button EOF -->
+                <!-- close button EOF -->
 
-              <!--henry here-->
-              <ul id="nav_ul">
-                <li>
-                  <a href="index.html" class="parent en_lang"><span>Home</span></a>
-                  <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
-                </li>
+                <!--henry here-->
+                <ul id="nav_ul">
+                  <li>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
+                  </li>
 
-                <li>
-                  <a
-                    href="about-us.html"
-                    class="parent"><span class="m">About Us</span></a>
-                </li>
-                <li>
-                  <a
-                    href="products.html"
-                    class="parent"><span class="m">Products</span></a>
-                </li>
-                <li>
-                  <a
-                    href="information.html"
-                    class="parent"><span class="m">Information</span></a>
-                </li>
-                <li>
-                  <a
-                    href="contact-us.html"
-                    class="parent"><span class="m">Contact Us</span></a>
-                </li>
-                <!-- <li style="margin-top: 5px;">
+                  <li>
+                    <a
+                      href="about-us.html"
+                      class="parent"><span class="m">About Us</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="products.html"
+                      class="parent"><span class="m">Products</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="information.html"
+                      class="parent"><span class="m">Information</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="testimonials-jerry-tyler.html"
+                      class="parent"><span class="m">Testimonials</span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="contact-us.html"
+                      class="parent"><span class="m">Contact Us</span></a>
+                  </li>
+                  <!-- <li style="margin-top: 5px;">
                   <span id="lang-switch">
                     <img style="margin-left: 10px; margin-right: 10px;"
                       src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
@@ -415,17 +425,17 @@
                       class="vi">
                   </span>
                 </li> -->
-   <li><span></span></li>-->
-              </ul>
+                  <li><span></span></li>-->
+                </ul>
+              </div>
+              <!-- //////////////// end for responsive menu ////////////-->
             </div>
-            <!-- //////////////// end for responsive menu ////////////-->
           </div>
+          <!-- end of div flex-container -->
         </div>
-        <!-- end of div flex-container -->
+        <!--end of div wrapper99 -->
       </div>
-      <!--end of div wrapper99 -->
-    </div>
-    <!--end of div class top3 -->
+      <!--end of div class top3 -->
       <!--ITSZ:Change the layout (top_style3.css) EOF-->
 
       <!-- ///////////////////// TOP 3 END  //////////////////////// -->
@@ -511,9 +521,12 @@
                 800-880-1993</span><br>E-mail: info@wildhorse777usa.com</div>
             <div style="text-align: center; width: 100%;margin-bottom: 30px">
               <!--IT Service Zone: Google map Dynamic START-->
-    
+
               <address>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.789935779665!2d-118.0070351!3d33.7919224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd28d0a73d2385%3A0x404c7a9041498428!2s11751%20Monarch%20St%2C%20Garden%20Grove%2C%20CA%2092841%2C%20USA!5e0!3m2!1sen!2s!4v1673865673508!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.789935779665!2d-118.0070351!3d33.7919224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd28d0a73d2385%3A0x404c7a9041498428!2s11751%20Monarch%20St%2C%20Garden%20Grove%2C%20CA%2092841%2C%20USA!5e0!3m2!1sen!2s!4v1673865673508!5m2!1sen!2s"
+                  width="800" height="600" style="border:0;" allowfullscreen=""
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </address>
               <!--IT Service Zone: Google map Dynamic EOF-->
             </div>
@@ -549,14 +562,14 @@
           <div class="footer_seo">
             <div class="wrapper" style="text-align: center">
               <!--	<img src=./images/bottom.png> -->
-  
+
               <style>
                 /* logo for Desktop*/
                 #logo2 {
                   background: url(./images/logo2_bg.png) no-repeat;
-                  background-size: 203px 292px;
-                  width: 203px;
-                  height: 146px;
+                  background-size: 150px 210px;
+                  width: 150px;
+                  height: 105px;
                   background-position: 0px 0px;
                   text-indent: -1000px;
                   overflow: hidden;
@@ -576,7 +589,7 @@
               <div id="logo2" style="margin: auto">
                 <a href="index.html"> WILD HORSE 777 INC.</a>
               </div>
-  
+
               <div class="footer_address">
                 11751 Monarch Street<br />
                 Garden Grove, CA 92841
@@ -587,23 +600,23 @@
                   </a>
                 </div>
                 <!--end of col1-->
-  
+
                 <div class="col2">
-                  <div class="text">E-mail: 
+                  <div class="text">E-mail:
                     <a href="mailto:info@wildhorse777usa.com">info@wildhorse777usa.com</a>
                   </div>
                 </div>
                 <!--end of col2-->
                 <div class="col3">
-                  <div class="text">Phone: 
-                    <a href="tel:800-880-1993">800-880-1993</a>  
+                  <div class="text">Phone:
+                    <a href="tel:800-880-1993">800-880-1993</a>
                   </div>
                 </div>
                 <!--end of col3-->
-  
+
                 <div style="clear: both"></div>
               </div>
-  
+
               <!--
   <font>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2023 Vortex Life Science. All rights reserved. Designed by </font>
    <a target=_blank href="http://www.sea-lion.biz"><font color="#575555">Sea-Lion</font></a><font color="#575555">		<br></font>

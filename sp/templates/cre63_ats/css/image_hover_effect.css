@@ -42,7 +42,7 @@ this whole section can be removed.
 body {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	color:#212121;
-	background:url("../img/bg.gif");
+	/* background:url("../img/bg.gif"); */
 }
 #wrapper {width:860px;margin:20px auto;}
 .clear {clear:left;height:21px;line-height:21px;}

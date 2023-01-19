@@ -39,7 +39,7 @@ border-bottom: 4px solid #d6d3d3;
 /* width: 100%; */
 /* top: 0px;  */   /* henry hide:  this is bad code because it make div become absolute. */
 z-index: 999999; /*IT Service Zone: responsive issue menu div fixed*/
-background-image:url('../../../../images/top3_bg.png'); 
+/* background-image:url('../../../../images/top3_bg.png');  */
 background-repeat: repeat;
 background-position-x: -150px;
 padding: 1% 60px;
