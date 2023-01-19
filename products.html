@@ -2,6 +2,7 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html dir="LTR" lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width; initial-scale=1.0; maximum-scale=1.0;
@@ -146,6 +147,10 @@
       });
     </script>
     <!--henry: button go to top : EOF-->
+
+    <!-- Translate -->
+    <link rel="stylesheet" href="./sp/css/translate.css">
+    <script src="./sp/js/translate.js"></script>
   </head>
 
   <!-- warnings //-->
@@ -201,8 +206,8 @@
                 }
 
                 #logo.fixed {
-                  background-size: 130px 110px;
-                  width: 130px;
+                  background-size: 100px 110px;
+                  width: 100px;
                   height: 56px;
                 }
 
@@ -267,7 +272,7 @@
                 }
                 /*** RESPONSIVE frame work EOF  ***/
               </style>
-              <a href="index.html"><div id="logo">Vortex Life Science</div></a>
+              <a href="index.html"><div id="logo"></div></a>
             </div>
 
             <div class="flex-item">
@@ -283,12 +288,9 @@
               <div id="menu">
                 <ul class="menu">
                   <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
                   </li>
-
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
--->
                   <li>
                     <a
                       href="about-us.html"
@@ -309,8 +311,16 @@
                       href="contact-us.html"
                       class="parent"><span class="m">Contact Us</span></a>
                   </li>
-                  <!-- language 
-		 <li><span></span></li>-->
+                  <!-- <li style="margin-top: 5px;">
+                    <span id="lang-switch">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                        class="en">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                        class="vi">
+                    </span>
+                  </li> -->
                 </ul>
               </div>
               <!--end for regular menu -->
@@ -356,7 +366,7 @@
                   top: 3px;
                   z-index: 9999;
                   padding: 10px;
-                  "><i style="" class="fa fa-times" aria-hidden="true">close</i></span>
+                  "><i style="" class="fa fa-times" aria-hidden="true">Close</i></span>
                 <script>
                   /*ITSZ: menu close button functionality START*/
                   jQuery(document).ready(function ($) {
@@ -371,14 +381,10 @@
                 <!--henry here-->
                 <ul id="nav_ul">
                   <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
                   </li>
 
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
-
-
--->
                   <li>
                     <a
                       href="about-us.html"
@@ -399,7 +405,16 @@
                       href="contact-us.html"
                       class="parent"><span class="m">Contact Us</span></a>
                   </li>
-                  <!-- language 
+                  <!-- <li style="margin-top: 5px;">
+                    <span id="lang-switch">
+                      <img style="margin-left: 10px; margin-right: 10px;"
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                        class="en">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                        class="vi">
+                    </span>
+                  </li> -->
 		 <li><span></span></li>-->
                 </ul>
               </div>
@@ -486,7 +501,7 @@
               <p>Our user-friendly nasal and oral sprays demonstrate r<strong>eliable
                   effectiveness </strong>not only <strong>as a therapeutic agent
                   for the COVID-19 infection</strong> but also offers a <strong>significant</strong>
-                if not complete <strong>measure of preventative protection</strong>.&nbsp;
+                 <strong>measure of preventative protection</strong>.&nbsp;
                 Most importantly, we are confident our formulation will cover
                 ALL current variant strains of the SARS-COV-2 virus.</p>
 
@@ -496,11 +511,11 @@
                 <li>100 percent natural, non-toxic and contains no
                   preservatives.</li>
                 <li>No reported side effects.</li>
-                <li>We observed 100 percent survival without any progression to
+                <li>We observed zero progression to
                   clinically severe stages requiring mechanical ventilation
                   support in confirmed COVID-19 positive users.</li>
                 <li>Conversion from positive to negative COVID status range
-                  between 6-14 days following the initiation of use.</li>
+                  between 6-14 days following the initiation of use in most cases.</li>
               </ul>
               <br>
               &nbsp;
@@ -654,7 +669,15 @@
                 overflow: hidden;
                 display: block;
               }
- 
+              .footer_address a {
+                color: #2087c5 ;
+                font-weight: bold;
+                text-decoration: none;
+              }
+
+              .footer_address a:hover {
+                color: #4e504f;
+              }
               /*** RESPONSIVE frame work EOF  ***/
             </style>
             <div id="logo2" style="margin: auto">
@@ -666,16 +689,22 @@
               Garden Grove, CA 92841
               <div style="margin-bottom: 3%; clear: both"></div>
               <div class="col1">
-                <div class="text">www.wildhorse777.com</div>
+                <a href="https://wildhorse-777.com">
+                  https://wildhorse-777.com
+                </a>
               </div>
               <!--end of col1-->
 
               <div class="col2">
-                <div class="text">E-mail: info@wildhorse777usa.com</div>
+                <div class="text">E-mail: 
+                  <a href="mailto:info@wildhorse777usa.com">info@wildhorse777usa.com</a>
+                </div>
               </div>
               <!--end of col2-->
               <div class="col3">
-                <div class="text">Phone: 800-880-1993</div>
+                <div class="text">Phone: 
+                  <a href="tel:800-880-1993">800-880-1993</a>  
+                </div>
               </div>
               <!--end of col3-->
 

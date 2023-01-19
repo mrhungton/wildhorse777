@@ -2,6 +2,7 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html dir="LTR" lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width; initial-scale=1.0; maximum-scale=1.0;
@@ -146,6 +147,10 @@
       });
     </script>
     <!--henry: button go to top : EOF-->
+
+    <!-- Translate -->
+    <link rel="stylesheet" href="./sp/css/translate.css">
+    <script src="./sp/js/translate.js"></script>
   </head>
 
   <!-- warnings //-->
@@ -173,244 +178,254 @@
         rel="stylesheet"
         />
 
-      <!--ITSZ:Change the layout (top_style3.css) START-->
-      <div class="top3">
-        <div class="wrapper99">
-          <!--<a href=><div class=tab_phone>Registration NOW</div></a>-->
+     <!--ITSZ:Change the layout (top_style3.css) START-->
+     <div class="top3">
+      <div class="wrapper99">
+        <!--<a href=><div class=tab_phone>Registration NOW</div></a>-->
 
-          <div
-            class="flex-container"
-            style="position: relative; padding: 0px 0px; min-height: 40px">
-            <div class="flex-item mobile-logo">
-              <!-- IT Service Zone: Add mobile-logo class for logo responsive-->
-              <style>
-                /* logo for Desktop*/
+        <div
+          class="flex-container"
+          style="position: relative; padding: 0px 0px; min-height: 40px">
+          <div class="flex-item mobile-logo">
+            <!-- IT Service Zone: Add mobile-logo class for logo responsive-->
+            <style>
+              /* logo for Desktop*/
+              #logo {
+                background: url(./images/logo_bg.png) no-repeat;
+                background-size: 150px 210px;
+                width: 150px;
+                height: 105px;
+                background-position: 0px 0px;
+                text-indent: -1000px;
+                overflow: hidden;
+                display: block;
+              }
+
+              #logo:hover {
+                background-position: 0px -105px;
+              }
+
+              #logo.fixed {
+                background-size: 100px 110px;
+                width: 100px;
+                height: 56px;
+              }
+
+              #logo.fixed:hover {
+                background-position: 0px -52.5px;
+              }
+
+              /*** RESPONSIVE frame work ***/
+
+              @media (min-width: 0px) and (max-width: 1000px) {
                 #logo {
-                  background: url(./images/logo_bg.png) no-repeat;
-                  background-size: 150px 210px;
-                  width: 150px;
-                  height: 105px;
-                  background-position: 0px 0px;
-                  text-indent: -1000px;
-                  overflow: hidden;
-                  display: block;
+                  background-size: 100px 170px;
+                  width: 190px;
+                  height: 88px;
                 }
 
                 #logo:hover {
-                  background-position: 0px -105px;
+                  background-position: 0px -84px;
+                }
+              }
+
+              @media (min-width: 0px) and (max-width: 767px) {
+                #logo {
+                  background-size: 100px 170px;
+                  width: 190px;
+                  height: 88px;
                 }
 
-                #logo.fixed {
-                  background-size: 100px 110px;
-                  width: 100px;
-                  height: 56px;
-                }
-
-                #logo.fixed:hover {
+                #logo:hover {
                   background-position: 0px -52.5px;
                 }
 
-                /*** RESPONSIVE frame work ***/
+                #logo a,
+                #logo-scroll a {
+                  display: inline-block;
+                }
+                #logo {
+                  text-align: center;
+                }
+              }
 
-                @media (min-width: 0px) and (max-width: 1000px) {
-                  #logo {
-                    background-size: 100px 170px;
-                    width: 190px;
-                    height: 88px;
-                  }
-
-                  #logo:hover {
-                    background-position: 0px -84px;
-                  }
+              @media (min-width: 0px) and (max-width: 767px) {
+                #logo {
+                  background-size: 60.9px 87.6px;
+                  width: 60.9px;
+                  height: 43.8px
                 }
 
-                @media (min-width: 0px) and (max-width: 767px) {
-                  #logo {
-                    background-size: 100px 170px;
-                    width: 190px;
-                    height: 88px;
-                  }
-
-                  #logo:hover {
-                    background-position: 0px -52.5px;
-                  }
-
-                  #logo a,
-                  #logo-scroll a {
-                    display: inline-block;
-                  }
-                  #logo {
-                    text-align: center;
-                  }
+                #logo:hover {
+                  background-position: 0px -31.5px;
                 }
 
-                @media (min-width: 0px) and (max-width: 767px) {
-                  #logo {
-                    background-size: 60.9px 87.6px;
-                    width: 60.9px;
-                    height: 43.8px
-                  }
-
-                  #logo:hover {
-                    background-position: 0px -31.5px;
-                  }
-
-                  #logo.fixed {
-                    background-size: 60.9px 87.6px;
-                    width: 60.9px;
-                    height: 43.8px;
-                  }
-
-                  #logo.fixed:hover {
-                    background-position: 0px -31.5px;
-                  }
+                #logo.fixed {
+                  background-size: 60.9px 87.6px;
+                  width: 60.9px;
+                  height: 43.8px;
                 }
-                /*** RESPONSIVE frame work EOF  ***/
-              </style>
-              <a href="index.html"><div id="logo"></div></a>
+
+                #logo.fixed:hover {
+                  background-position: 0px -31.5px;
+                }
+              }
+              /*** RESPONSIVE frame work EOF  ***/
+            </style>
+            <a href="index.html"><div id="logo"></div></a>
+          </div>
+
+          <div class="flex-item">
+            <link
+              type="text/css"
+              href="./cms/menu_black/menu_style3.css"
+              rel="stylesheet"
+              />
+            <script
+              type="text/javascript"
+              src="./cms/menu_black/menu.js"></script>
+            <!-- //////////////// start for regular menu ////////////-->
+            <div id="menu">
+              <ul class="menu">
+                <li>
+                  <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                  <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
+                </li>
+                <li>
+                  <a
+                    href="about-us.html"
+                    class="parent"><span class="m">About Us</span></a>
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="parent"><span class="m">Products</span></a>
+                </li>
+                <li>
+                  <a
+                    href="information.html"
+                    class="parent"><span class="m">Information</span></a>
+                </li>
+                <li>
+                  <a
+                    href="contact-us.html"
+                    class="parent"><span class="m">Contact Us</span></a>
+                </li>
+                <!-- <li style="margin-top: 5px;">
+                  <span id="lang-switch">
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                      class="en">
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                      class="vi">
+                  </span>
+                </li> -->
+              </ul>
             </div>
-
-            <div class="flex-item">
-              <link
-                type="text/css"
-                href="./cms/menu_black/menu_style3.css"
-                rel="stylesheet"
-                />
-              <script
-                type="text/javascript"
-                src="./cms/menu_black/menu.js"></script>
-              <!-- //////////////// start for regular menu ////////////-->
-              <div id="menu">
-                <ul class="menu">
-                  <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
-                  </li>
-
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
--->
-                  <li>
-                    <a
-                      href="about-us.html"
-                      class="parent"><span class="m">About Us</span></a>
-                  </li>
-                  <li>
-                    <a
-                      href="products.html"
-                      class="parent"><span class="m">Products</span></a>
-                  </li>
-                  <li>
-                    <a
-                      href="information.html"
-                      class="parent"><span class="m">Information</span></a>
-                  </li>
-                  <li>
-                    <a
-                      href="contact-us.html"
-                      class="parent"><span class="m">Contact Us</span></a>
-                  </li>
-                  <!-- language 
-		 <li><span></span></li>-->
-                </ul>
-              </div>
-              <!--end for regular menu -->
-              <!-- //////////////// start for responsive menu ////////////-->
-              <!--ITSZ: logo show on top ONLY when scroll START-->
-              <div class="mobile-logo-scroll">
-                <div class="logo-content">
+            <!--end for regular menu -->
+            <!-- //////////////// start for responsive menu ////////////-->
+            <!--ITSZ: logo show on top ONLY when scroll START-->
+            <div class="mobile-logo-scroll">
+              <div class="logo-content">
+                <div>
                   <div>
-                    <div>
-                      <div style="padding: 0 0.12rem; text-align: center">
-                        <div style="margin-top: 0; background: transparent">
-                          <div id="logo-scroll">
-                            <a href="index.html">Vortex Life Science</a>
-                          </div>
+                    <div style="padding: 0 0.12rem; text-align: center">
+                      <div style="margin-top: 0; background: transparent">
+                        <div id="logo-scroll">
+                          <a href="index.html">Vortex Life Science</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!--ITSZ: logo on top when scroll EOF-->
-              <!-- henry hide, no need to show favicon 
+            </div>
+            <!--ITSZ: logo on top when scroll EOF-->
+            <!-- henry hide, no need to show favicon 
 <div class="mobile-logo-top"><a href="index.html"> <img src="./images/favicon.ico"></a></div>
 -->
-              <label class="minimal-menu-button" for="mobile-nav"></label>
-              <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - Start-->
-              <div class="fixed_in_mobile" style=""></div>
-              <!--end of div class=fixed_in_mobile -->
-              <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - EOF-->
-              <input
-                class="minimal-menu-button"
-                type="checkbox"
-                id="mobile-nav"
-                name="mobile-nav"
-                />
-              <div class="minimal-menu clr-blue">
-                <!-- close button - start -->
-                <span
-                  id="close_menu"
-                  style="
-                  position: absolute;
-                  right: 0;
-                  top: 3px;
-                  z-index: 9999;
-                  padding: 10px;
-                  "><i style="" class="fa fa-times" aria-hidden="true">close</i></span>
-                <script>
-                  /*ITSZ: menu close button functionality START*/
-                  jQuery(document).ready(function ($) {
-                    $("#close_menu").click(function () {
-                      $("#mobile-nav").attr("checked", false);
-                    });
+            <label class="minimal-menu-button" for="mobile-nav"></label>
+            <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - Start-->
+            <div class="fixed_in_mobile" style=""></div>
+            <!--end of div class=fixed_in_mobile -->
+            <!--IT Service Zone: add extra element (search, shopping cart, login icon....) into the top menu - EOF-->
+            <input
+              class="minimal-menu-button"
+              type="checkbox"
+              id="mobile-nav"
+              name="mobile-nav"
+              />
+            <div class="minimal-menu clr-blue">
+              <!-- close button - start -->
+              <span
+                id="close_menu"
+                style="
+                position: absolute;
+                right: 0;
+                top: 3px;
+                z-index: 9999;
+                padding: 10px;
+                "><i style="" class="fa fa-times" aria-hidden="true">Close</i></span>
+              <script>
+                /*ITSZ: menu close button functionality START*/
+                jQuery(document).ready(function ($) {
+                  $("#close_menu").click(function () {
+                    $("#mobile-nav").attr("checked", false);
                   });
-                  /*ITSZ: menu close button functionality EOF*/
-                </script>
-                <!-- close button EOF -->
+                });
+                /*ITSZ: menu close button functionality EOF*/
+              </script>
+              <!-- close button EOF -->
 
-                <!--henry here-->
-                <ul id="nav_ul">
-                  <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
-                  </li>
+              <!--henry here-->
+              <ul id="nav_ul">
+                <li>
+                  <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                  <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
+                </li>
 
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
-
-
--->
-                  <li>
-                    <a
-                      href="about-us.html"
-                      class="parent"><span class="m">About Us</span></a>
-                  </li>
-                  <li>
-                    <a
-                      href="products.html"
-                      class="parent"><span class="m">Products</span></a>
-                  </li>
-                  <li>
-                    <a
-                      href="information.html"
-                      class="parent"><span class="m">Information</span></a>
-                  </li>
-                  <li>
-                    <a
-                      href="contact-us.html"
-                      class="parent"><span class="m">Contact Us</span></a>
-                  </li>
-                  <!-- language 
-		 <li><span></span></li>-->
-                </ul>
-              </div>
-              <!-- //////////////// end for responsive menu ////////////-->
+                <li>
+                  <a
+                    href="about-us.html"
+                    class="parent"><span class="m">About Us</span></a>
+                </li>
+                <li>
+                  <a
+                    href="products.html"
+                    class="parent"><span class="m">Products</span></a>
+                </li>
+                <li>
+                  <a
+                    href="information.html"
+                    class="parent"><span class="m">Information</span></a>
+                </li>
+                <li>
+                  <a
+                    href="contact-us.html"
+                    class="parent"><span class="m">Contact Us</span></a>
+                </li>
+                <!-- <li style="margin-top: 5px;">
+                  <span id="lang-switch">
+                    <img style="margin-left: 10px; margin-right: 10px;"
+                      src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                      class="en">
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                      class="vi">
+                  </span>
+                </li> -->
+   <li><span></span></li>-->
+              </ul>
             </div>
+            <!-- //////////////// end for responsive menu ////////////-->
           </div>
-          <!-- end of div flex-container -->
         </div>
-        <!--end of div wrapper99 -->
+        <!-- end of div flex-container -->
       </div>
-      <!--end of div class top3 -->
+      <!--end of div wrapper99 -->
+    </div>
+    <!--end of div class top3 -->
       <!--ITSZ:Change the layout (top_style3.css) EOF-->
 
       <!-- ///////////////////// TOP 3 END  //////////////////////// -->
@@ -547,7 +562,15 @@
                   overflow: hidden;
                   display: block;
                 }
-   
+                .footer_address a {
+                  color: #2087c5 ;
+                  font-weight: bold;
+                  text-decoration: none;
+                }
+  
+                .footer_address a:hover {
+                  color: #4e504f;
+                }
                 /*** RESPONSIVE frame work EOF  ***/
               </style>
               <div id="logo2" style="margin: auto">
@@ -559,16 +582,22 @@
                 Garden Grove, CA 92841
                 <div style="margin-bottom: 3%; clear: both"></div>
                 <div class="col1">
-                  <div class="text">www.wildhorse777.com</div>
+                  <a href="https://wildhorse-777.com">
+                    https://wildhorse-777.com
+                  </a>
                 </div>
                 <!--end of col1-->
   
                 <div class="col2">
-                  <div class="text">E-mail: info@wildhorse777usa.com</div>
+                  <div class="text">E-mail: 
+                    <a href="mailto:info@wildhorse777usa.com">info@wildhorse777usa.com</a>
+                  </div>
                 </div>
                 <!--end of col2-->
                 <div class="col3">
-                  <div class="text">Phone: 800-880-1993</div>
+                  <div class="text">Phone: 
+                    <a href="tel:800-880-1993">800-880-1993</a>  
+                  </div>
                 </div>
                 <!--end of col3-->
   

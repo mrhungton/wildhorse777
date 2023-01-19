@@ -2,6 +2,7 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html dir="LTR" lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width; initial-scale=1.0; maximum-scale=1.0;
@@ -150,9 +151,7 @@
     <!-- Translate -->
     <link rel="stylesheet" href="./sp/css/translate.css">
     <script src="./sp/js/translate.js"></script>
-    <style>
-      
-    </style>
+
   </head>
 
   <body
@@ -288,10 +287,6 @@
                     <a href="index.html" class="parent en_lang"><span>Home</span></a>
                     <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
                   </li>
-
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
--->
                   <li>
                     <a
                       href="about-us.html"
@@ -367,7 +362,7 @@
                   top: 3px;
                   z-index: 9999;
                   padding: 10px;
-                  "><i style="" class="fa fa-times" aria-hidden="true">close</i></span>
+                  "><i style="" class="fa fa-times" aria-hidden="true">Close</i></span>
                 <script>
                   /*ITSZ: menu close button functionality START*/
                   jQuery(document).ready(function ($) {
@@ -382,7 +377,8 @@
                 <!--henry here-->
                 <ul id="nav_ul">
                   <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
                   </li>
 
                   <li>
@@ -405,8 +401,17 @@
                       href="contact-us.html"
                       class="parent"><span class="m">Contact Us</span></a>
                   </li>
-                  <!-- language 
-		 <li><span></span></li>-->
+                  <!-- <li style="margin-top: 5px;">
+                    <span id="lang-switch">
+                      <img style="margin-left: 10px; margin-right: 10px;"
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                        class="en">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                        class="vi">
+                    </span>
+                  </li> -->
+                  <li><span></span></li>-->
                 </ul>
               </div>
               <!-- //////////////// end for responsive menu ////////////-->
@@ -614,18 +619,20 @@
           
           
           
-          .col2 {width: 50%; }
+          .custom-col2 {
+            width: 48%; 
+            float: right !important; 
+          }
           
-          
-          
-          .col2 .h_h {color: #a0481c;
+          .custom-col2 .h_h {
+            color: #a0481c;
               text-transform: uppercase;
               font-size: 40px;
               padding-top: 22px;
               padding-bottom: 18px;
               line-height: 100%;
-              }
-          .col2 .h_t {color: white;
+            }
+          .custom-col2 .h_t {color: white;
               font-family: Georgia;
               font-size: 23px;
               margin-bottom: 60%;
@@ -640,7 +647,7 @@
           
           .row_style5_3 {padding: 0}
           .row_style5_3:before {background: #2f5b68}
-          .col1, .col2{ width:100%; padding-right:0px}
+          .col1, .custom-col2{ width:100%; padding-right:0px}
           .col1 {display:none}
 
           .h_t img.for_mobile {display: block;
@@ -649,9 +656,13 @@
               margin-bottom: 10%;}
           
           
-          .col2 .h_h {display: none}
-          .col2 .h_t {   font-size: 18px;  margin:0; padding-bottom:10%; line-height:200%; text-align:center   }
-          }
+          .custom-col2 .h_h {display: none}
+          .custom-col2 .h_t {   font-size: 18px;  margin:0; padding-bottom:10%; line-height:200%; text-align:center   }
+          .custom-col2 {
+            width: 100% !important; 
+          }  
+        }
+
           </style>
             <div class="row_style5_3">
 
@@ -668,7 +679,7 @@
                 </div>
                 <!--end of col1-->
 
-                <div class="col2">
+                <div class="custom-col2">
 
                   <div class="text">
                     <div class="h_h"></div>
@@ -861,7 +872,15 @@
                 overflow: hidden;
                 display: block;
               }
- 
+              .footer_address a {
+                color: #2087c5 ;
+                font-weight: bold;
+                text-decoration: none;
+              }
+
+              .footer_address a:hover {
+                color: #4e504f;
+              }
               /*** RESPONSIVE frame work EOF  ***/
             </style>
             <div id="logo2" style="margin: auto">
@@ -873,16 +892,22 @@
               Garden Grove, CA 92841
               <div style="margin-bottom: 3%; clear: both"></div>
               <div class="col1">
-                <div class="text">www.wildhorse777.com</div>
+                <a href="https://wildhorse-777.com">
+                  https://wildhorse-777.com
+                </a>
               </div>
               <!--end of col1-->
 
               <div class="col2">
-                <div class="text">E-mail: info@wildhorse777usa.com</div>
+                <div class="text">E-mail:
+                  <a href="mailto:info@wildhorse777usa.com">info@wildhorse777usa.com</a>
+                </div>
               </div>
               <!--end of col2-->
               <div class="col3">
-                <div class="text">Phone: 800-880-1993</div>
+                <div class="text">Phone:
+                  <a href="tel:800-880-1993">800-880-1993</a>
+                </div>
               </div>
               <!--end of col3-->
 

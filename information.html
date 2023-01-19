@@ -2,6 +2,7 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html dir="LTR" lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width; initial-scale=1.0; maximum-scale=1.0;
@@ -146,6 +147,11 @@
       });
     </script>
     <!--henry: button go to top : EOF-->
+    
+    <!-- Translate -->
+    <link rel="stylesheet" href="./sp/css/translate.css">
+    <script src="./sp/js/translate.js"></script>
+
   </head>
 
   <!-- warnings //-->
@@ -201,8 +207,8 @@
                 }
 
                 #logo.fixed {
-                  background-size: 130px 110px;
-                  width: 130px;
+                  background-size: 100px 110px;
+                  width: 100px;
                   height: 56px;
                 }
 
@@ -267,7 +273,7 @@
                 }
                 /*** RESPONSIVE frame work EOF  ***/
               </style>
-              <a href="index.html"><div id="logo">Vortex Life Science</div></a>
+              <a href="index.html"><div id="logo"></div></a>
             </div>
 
             <div class="flex-item">
@@ -283,12 +289,9 @@
               <div id="menu">
                 <ul class="menu">
                   <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
                   </li>
-
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
--->
                   <li>
                     <a
                       href="about-us.html"
@@ -309,8 +312,16 @@
                       href="contact-us.html"
                       class="parent"><span class="m">Contact Us</span></a>
                   </li>
-                  <!-- language 
-		 <li><span></span></li>-->
+                  <!-- <li style="margin-top: 5px;">
+                    <span id="lang-switch">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                        class="en">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                        class="vi">
+                    </span>
+                  </li> -->
                 </ul>
               </div>
               <!--end for regular menu -->
@@ -356,7 +367,7 @@
                   top: 3px;
                   z-index: 9999;
                   padding: 10px;
-                  "><i style="" class="fa fa-times" aria-hidden="true">close</i></span>
+                  "><i style="" class="fa fa-times" aria-hidden="true">Close</i></span>
                 <script>
                   /*ITSZ: menu close button functionality START*/
                   jQuery(document).ready(function ($) {
@@ -371,14 +382,10 @@
                 <!--henry here-->
                 <ul id="nav_ul">
                   <li>
-                    <a href="index.html" class="parent"><span>Home</span></a>
+                    <a href="index.html" class="parent en_lang"><span>Home</span></a>
+                    <a href="index.html" class="parent vi_lang"><span>Trang chủ</span></a>
                   </li>
 
-                  <!-- static link
-		 <li><a href="about-us.html" class="parent"><span>About Us</span></a></li>
-
-
--->
                   <li>
                     <a
                       href="about-us.html"
@@ -399,7 +406,16 @@
                       href="contact-us.html"
                       class="parent"><span class="m">Contact Us</span></a>
                   </li>
-                  <!-- language 
+                  <!-- <li style="margin-top: 5px;">
+                    <span id="lang-switch">
+                      <img style="margin-left: 10px; margin-right: 10px;"
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png"
+                        class="en">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Vietnam-Flag.png"
+                        class="vi">
+                    </span>
+                  </li> -->
 		 <li><span></span></li>-->
                 </ul>
               </div>
@@ -468,16 +484,24 @@
 
             <div class="pageHeading">Information</div>
 
-            <div class="cds_pages_body" id="cbp-so-scroller"><div
-                style="text-align: center;"><img alt="" src="./images/s2.jpg"
-                  style="opacity: 0.9; text-align: center;"></div>
+            <div class="cds_pages_body" id="cbp-so-scroller">
+              <div
+                style="text-align: center;">
+                <img alt="" src="./images/s2.jpg"
+                  style="opacity: 0.9; text-align: center;">
+                </div>
 
-              <div style="text-align: center;"><br>
+              <div style="text-align: center;">
                 <img alt="" src="./images/s4.jpg"><br>
                 <img alt="" src="./images/s_amplification.jpg"><br>
                 <img alt="" src="./images/s3.jpg"><br>
                 <img alt="" src="./images/s6.jpg"><br>
                 <img alt="" src="./images/s7.jpg"><br>
+                <img alt="" src="./images/s24.png"><br>
+                <!-- <img alt="" src="./images/s27.jpg"><br> -->
+                <img alt="" src="./images/s31.jpg"><br>
+                <img alt="" src="./images/s32.jpg"><br>
+                <img alt="" src="./images/s33.jpg"><br>
                 &nbsp;</div></div>
 
             <div style="clear:both"></div>
@@ -517,9 +541,9 @@
                     display: block;
                     list-style: none;
                     position: relative;
-                    margin-left: auto;
+                    margin-left: -40px;
                     margin-right: auto;
-                    margin-top: 0;
+                    margin-top: 30px;
                 }
                 
                 #clients .clients-wrap ul li {
@@ -538,7 +562,7 @@
                 #clients .clients-wrap ul li img {
                     vertical-align: middle;
                     max-width: 100%;
-                  max-height:200px; 						/* henry control the height of all logo  */
+                  max-height:165px; 						/* henry control the height of all logo  */
                     -webkit-transition: 0 linear left;
                     -moz-transition: 0 linear left;
                     transition: 0 linear left;
@@ -643,7 +667,7 @@
           <div class="footer_seo">
             <div class="wrapper" style="text-align: center">
               <!--	<img src=./images/bottom.png> -->
-
+  
               <style>
                 /* logo for Desktop*/
                 #logo2 {
@@ -656,34 +680,48 @@
                   overflow: hidden;
                   display: block;
                 }
-   
+                .footer_address a {
+                  color: #2087c5 ;
+                  font-weight: bold;
+                  text-decoration: none;
+                }
+  
+                .footer_address a:hover {
+                  color: #4e504f;
+                }
                 /*** RESPONSIVE frame work EOF  ***/
               </style>
               <div id="logo2" style="margin: auto">
                 <a href="index.html"> WILD HORSE 777 INC.</a>
               </div>
-
+  
               <div class="footer_address">
                 11751 Monarch Street<br />
                 Garden Grove, CA 92841
                 <div style="margin-bottom: 3%; clear: both"></div>
                 <div class="col1">
-                  <div class="text">www.wildhorse777.com</div>
+                  <a href="https://wildhorse-777.com">
+                    https://wildhorse-777.com
+                  </a>
                 </div>
                 <!--end of col1-->
-
+  
                 <div class="col2">
-                  <div class="text">E-mail: info@wildhorse777usa.com</div>
+                  <div class="text">E-mail: 
+                    <a href="mailto:info@wildhorse777usa.com">info@wildhorse777usa.com</a>
+                  </div>
                 </div>
                 <!--end of col2-->
                 <div class="col3">
-                  <div class="text">Phone: 800-880-1993</div>
+                  <div class="text">Phone: 
+                    <a href="tel:800-880-1993">800-880-1993</a>  
+                  </div>
                 </div>
                 <!--end of col3-->
-
+  
                 <div style="clear: both"></div>
               </div>
-
+  
               <!--
   <font>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2023 Vortex Life Science. All rights reserved. Designed by </font>
    <a target=_blank href="http://www.sea-lion.biz"><font color="#575555">Sea-Lion</font></a><font color="#575555">		<br></font>

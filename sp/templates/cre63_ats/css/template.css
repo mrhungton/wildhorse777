@@ -2271,7 +2271,7 @@ a[href^=tel] {
 /* for new/big desktop tu 1200 px tro len ....*/
 @media (min-width: 1200px) and (max-width: 3000px) {
 	.wrapper_mega{ /* width: 1200px;  */}
-	.wrapper{ width: 80%; }
+	.wrapper{ width: 90%; }
 	.slideshow{max-width: 100%;}
 	.slideshow2{width: 290px; height: 350px; }
 }
