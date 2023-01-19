@@ -255,7 +255,6 @@ div#menu span {
     .top3{ position: relative; 
 /*    height: 60px;  */ /* henry hide this so that top3 cover shopping icon and login icon */
     padding: 0 10px;
-    padding-bottom: 10px;
     }
     .top2{background: #FFF;}
 	.top1{font-size: 12px; padding: 0; line-height: 120%}
